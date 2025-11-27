@@ -1,0 +1,28 @@
+{
+  "modulePathMap": {
+    "default": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\products\\default",
+    "map": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\map",
+    "learning": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\learning",
+    "quickstart": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\quickstart",
+    "utils": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\utils",
+    "uicomponents": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\uicomponents"
+  },
+  "compileMode": "esmodule",
+  "projectRootPath": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint",
+  "nodeModulesPath": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\learning\\.preview\\default\\intermediates\\loader_out\\default\\node_modules",
+  "byteCodeHarInfo": {},
+  "declarationEntry": [],
+  "moduleName": "learning",
+  "hspNameOhmMap": {},
+  "harNameOhmMap": {},
+  "packageManagerType": "ohpm",
+  "compileEntry": [
+    "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\learning\\src\\main\\ets\\pages\\CourseLearning.ets"
+  ],
+  "otherCompileFiles": [],
+  "dynamicImportLibInfo": {},
+  "routerMap": [],
+  "hspResourcesMap": {},
+  "updateVersionInfo": {},
+  "buildConfigPath": ".preview\\config\\buildConfig.json"
+}
