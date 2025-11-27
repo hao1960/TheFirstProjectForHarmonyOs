@@ -1,0 +1,19 @@
+{
+	"record":	[{
+			"type":	"string",
+			"name":	"page_show",
+			"id":	"0x02000000"
+		}, {
+			"type":	"media",
+			"name":	"ic_back",
+			"id":	"0x02000001"
+		}, {
+			"type":	"media",
+			"name":	"ic_close",
+			"id":	"0x02000002"
+		}, {
+			"type":	"media",
+			"name":	"ic_open",
+			"id":	"0x02000003"
+		}]
+}

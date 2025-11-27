@@ -1,0 +1,4 @@
+string page_show 0x02000000
+media ic_back 0x02000001
+media ic_close 0x02000002
+media ic_open 0x02000003
