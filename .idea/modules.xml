@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/07_StartPoint.iml" filepath="$PROJECT_DIR$/.idea/modules/07_StartPoint.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/default.iml" filepath="$PROJECT_DIR$/.idea/modules/default.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/learning.iml" filepath="$PROJECT_DIR$/.idea/modules/learning.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/map.iml" filepath="$PROJECT_DIR$/.idea/modules/map.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/quickstart.iml" filepath="$PROJECT_DIR$/.idea/modules/quickstart.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/uicomponents.iml" filepath="$PROJECT_DIR$/.idea/modules/uicomponents.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/utils.iml" filepath="$PROJECT_DIR$/.idea/modules/utils.iml" />
+    </modules>
+  </component>
+</project>

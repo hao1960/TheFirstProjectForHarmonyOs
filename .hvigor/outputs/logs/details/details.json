@@ -1,0 +1,79 @@
+{
+  "HVIGOR_OHOS_PLUGIN": {
+    "MODULES": [
+      {
+        "MODULE_NAME": "c21f969b5f03d33d43e04f8f136e7682",
+        "API_TYPE": "stageMode"
+      },
+      {
+        "MODULE_NAME": "1d78dc8ed51214e518b5114fe24490ae",
+        "API_TYPE": "stageMode"
+      },
+      {
+        "MODULE_NAME": "25a9ac406aceb47a0c6cade972bc26fa",
+        "API_TYPE": "stageMode"
+      },
+      {
+        "MODULE_NAME": "1f921ae5a6816fd42a8d546be70f22cd",
+        "API_TYPE": "stageMode"
+      },
+      {
+        "MODULE_NAME": "2b3583e6e17721c54496bd04e57a0c15",
+        "API_TYPE": "stageMode"
+      },
+      {
+        "MODULE_NAME": "4b9fd96ea9bad44c52cdc82569434346",
+        "API_TYPE": "stageMode"
+      }
+    ],
+    "NATIVE_COMPILER": "Default",
+    "BUILD_MODE": "debug"
+  },
+  "HVIGOR": {
+    "IS_INCREMENTAL": true,
+    "IS_DAEMON": true,
+    "IS_PARALLEL": true,
+    "IS_HVIGORFILE_TYPE_CHECK": false,
+    "TASK_TIME": {
+      "c21f969b5f03d33d43e04f8f136e7682": {
+        "CreateModuleInfo": 839200,
+        "PreCheckSyscap": 290700,
+        "GeneratePkgContextInfo": 4800400,
+        "ProcessStartupConfig": 896000,
+        "PreviewProcessResource": 3262500,
+        "PreviewCompileResource": 1651434900,
+        "PreviewHookCompileResource": 279500,
+        "CopyPreviewProfile": 4309100,
+        "ReplacePreviewerPage": 361700,
+        "buildPreviewerResource": 160700,
+        "PreviewUpdateAssets": 2318600,
+        "PreviewArkTS": 5827842800,
+        "PreviewBuild": 240000
+      }
+    },
+    "APIS": [
+      "getHvigorConfig",
+      "getRootNodeDescriptor",
+      "getChildNode",
+      "getNodeByName",
+      "getAllNodes",
+      "getRootNode",
+      "getNodeName",
+      "getNodePath",
+      "subNodes",
+      "getExtraOption",
+      "getExtParam",
+      "getExtParams",
+      "getProperty",
+      "getProperties",
+      "getParameter",
+      "getProductName",
+      "nodesEvaluated",
+      "getCommandEntryTask",
+      "getStartParams"
+    ],
+    "CONFIG_PROPERTIES": {},
+    "TOTAL_TIME": 7797672300,
+    "BUILD_ID": "202511201508289740"
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "lockVersion": "1.0",
+  "settings": {
+    "resolveConflict": true,
+    "resolveConflictStrict": false,
+    "installAll": true
+  },
+  "overrides": {},
+  "overrideDependencyMap": {},
+  "modules": {
+    ".": {
+      "name": "",
+      "dependencies": {},
+      "devDependencies": {},
+      "dynamicDependencies": {},
+      "maskedByOverrideDependencyMap": false
+    },
+    "commons/uicomponents": {
+      "name": "uicomponents",
+      "dependencies": {},
+      "devDependencies": {},
+      "dynamicDependencies": {},
+      "maskedByOverrideDependencyMap": false
+    },
+    "commons/utils": {
+      "name": "utils",
+      "dependencies": {},
+      "devDependencies": {},
+      "dynamicDependencies": {},
+      "maskedByOverrideDependencyMap": false
+    },
+    "features/learning": {
+      "name": "learning",
+      "dependencies": {
+        "utils": {
+          "specifier": "file:commons/utils",
+          "version": "file:commons/utils"
+        },
+        "uicomponents": {
+          "specifier": "file:commons/uicomponents",
+          "version": "file:commons/uicomponents"
+        }
+      },
+      "devDependencies": {},
+      "dynamicDependencies": {},
+      "maskedByOverrideDependencyMap": false
+    },
+    "features/map": {
+      "name": "map",
+      "dependencies": {
+        "utils": {
+          "specifier": "file:commons/utils",
+          "version": "file:commons/utils"
+        },
+        "uicomponents": {
+          "specifier": "file:commons/uicomponents",
+          "version": "file:commons/uicomponents"
+        }
+      },
+      "devDependencies": {},
+      "dynamicDependencies": {},
+      "maskedByOverrideDependencyMap": false
+    },
+    "features/quickstart": {
+      "name": "quickstart",
+      "dependencies": {
+        "utils": {
+          "specifier": "file:commons/utils",
+          "version": "file:commons/utils"
+        },
+        "uicomponents": {
+          "specifier": "file:commons/uicomponents",
+          "version": "file:commons/uicomponents"
+        }
+      },
+      "devDependencies": {},
+      "dynamicDependencies": {},
+      "maskedByOverrideDependencyMap": false
+    },
+    "products/default": {
+      "name": "default",
+      "dependencies": {
+        "learning": {
+          "specifier": "file:features/learning",
+          "version": "file:features/learning"
+        },
+        "map": {
+          "specifier": "file:features/map",
+          "version": "file:features/map"
+        },
+        "quickstart": {
+          "specifier": "file:features/quickstart",
+          "version": "file:features/quickstart"
+        }
+      },
+      "devDependencies": {},
+      "dynamicDependencies": {},
+      "maskedByOverrideDependencyMap": false
+    }
+  },
+  "packages": {
+    "utils@file:commons/utils": {
+      "storePath": "commons/utils",
+      "dependencies": {},
+      "dynamicDependencies": {},
+      "dev": false,
+      "dynamic": false,
+      "maskedByOverrideDependencyMap": false
+    },
+    "uicomponents@file:commons/uicomponents": {
+      "storePath": "commons/uicomponents",
+      "dependencies": {},
+      "dynamicDependencies": {},
+      "dev": false,
+      "dynamic": false,
+      "maskedByOverrideDependencyMap": false
+    },
+    "map@file:features/map": {
+      "storePath": "features/map",
+      "dependencies": {
+        "utils": "commons/utils",
+        "uicomponents": "commons/uicomponents"
+      },
+      "dynamicDependencies": {},
+      "dev": false,
+      "dynamic": false,
+      "maskedByOverrideDependencyMap": false
+    },
+    "learning@file:features/learning": {
+      "storePath": "features/learning",
+      "dependencies": {
+        "utils": "commons/utils",
+        "uicomponents": "commons/uicomponents"
+      },
+      "dynamicDependencies": {},
+      "dev": false,
+      "dynamic": false,
+      "maskedByOverrideDependencyMap": false
+    },
+    "quickstart@file:features/quickstart": {
+      "storePath": "features/quickstart",
+      "dependencies": {
+        "utils": "commons/utils",
+        "uicomponents": "commons/uicomponents"
+      },
+      "dynamicDependencies": {},
+      "dev": false,
+      "dynamic": false,
+      "maskedByOverrideDependencyMap": false
+    }
+  }
+}

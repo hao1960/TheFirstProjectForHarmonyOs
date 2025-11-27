@@ -1,0 +1,43 @@
+{
+	"record":	[{
+			"type":	"string",
+			"name":	"page_show",
+			"id":	"0x03000000"
+		}, {
+			"type":	"media",
+			"name":	"ic_guide",
+			"id":	"0x03000001"
+		}, {
+			"type":	"media",
+			"name":	"ic_medals",
+			"id":	"0x03000002"
+		}, {
+			"type":	"media",
+			"name":	"ic_prepare",
+			"id":	"0x03000003"
+		}, {
+			"type":	"media",
+			"name":	"ic_arrow",
+			"id":	"0x03000004"
+		}, {
+			"type":	"media",
+			"name":	"knowledge_map_banner",
+			"id":	"0x03000005"
+		}, {
+			"type":	"media",
+			"name":	"ic_video",
+			"id":	"0x03000006"
+		}, {
+			"type":	"media",
+			"name":	"ic_back",
+			"id":	"0x03000007"
+		}, {
+			"type":	"media",
+			"name":	"ic_close",
+			"id":	"0x03000008"
+		}, {
+			"type":	"media",
+			"name":	"ic_open",
+			"id":	"0x03000009"
+		}]
+}

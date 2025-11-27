@@ -1,0 +1,689 @@
+{
+  "ohos-module-default": {
+    "SELECT_TARGET": "default",
+    "MODULE_BUILD_DIR": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\products\\default\\build",
+    "TARGETS": {
+      "default": {
+        "SOURCE_ROOT": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\products\\default\\src\\main",
+        "RESOURCES_PATH": [
+          "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\products\\default\\src\\main\\resources"
+        ],
+        "BUILD_PATH": {
+          "OUTPUT_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\products\\default\\build\\default\\outputs\\default",
+          "INTERMEDIA_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\products\\default\\build\\default\\intermediates",
+          "JS_ASSETS_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\products\\default\\build\\default\\intermediates\\loader_out\\default",
+          "JS_LITE_ASSETS_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\products\\default\\build\\default\\intermediates\\loader_out_lite\\default",
+          "RES_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\products\\default\\build\\default\\intermediates\\res\\default",
+          "RES_PROFILE_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\products\\default\\build\\default\\intermediates\\res\\default\\resources\\base\\profile",
+          "ETS_SUPER_VISUAL_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\products\\default\\build\\default\\cache\\default\\default@CompileArkTS\\esmodule",
+          "JS_SUPER_VISUAL_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\products\\default\\build\\default\\cache\\default\\default@CompileJS\\jsbundle",
+          "WORKER_LOADER": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\products\\default\\build\\default\\intermediates\\loader\\default\\loader.json",
+          "MANIFEST_JSON": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\products\\default\\build\\default\\intermediates\\manifest\\default",
+          "OUTPUT_METADATA_JSON": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\products\\default\\build\\default\\intermediates\\hap_metadata\\default\\output_metadata.json",
+          "SOURCE_MAP_DIR": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\products\\default\\build\\default\\intermediates\\source_map\\default"
+        },
+        "BUILD_OPTION": {
+          "debuggable": true
+        }
+      },
+      "ohosTest": {
+        "SOURCE_ROOT": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\products\\default\\src\\ohosTest",
+        "RESOURCES_PATH": [
+          "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\products\\default\\src\\ohosTest\\resources"
+        ],
+        "BUILD_PATH": {
+          "OUTPUT_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\products\\default\\build\\default\\outputs\\ohosTest",
+          "INTERMEDIA_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\products\\default\\build\\default\\intermediates",
+          "JS_ASSETS_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\products\\default\\build\\default\\intermediates\\loader_out\\ohosTest",
+          "JS_LITE_ASSETS_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\products\\default\\build\\default\\intermediates\\loader_out_lite\\ohosTest",
+          "RES_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\products\\default\\build\\default\\intermediates\\res\\ohosTest",
+          "RES_PROFILE_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\products\\default\\build\\default\\intermediates\\res\\ohosTest\\resources\\base\\profile",
+          "ETS_SUPER_VISUAL_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\products\\default\\build\\default\\cache\\ohosTest\\ohosTest@OhosTestCompileArkTS\\esmodule",
+          "JS_SUPER_VISUAL_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\products\\default\\build\\default\\cache\\ohosTest\\ohosTest@OhosTestCompileJS\\jsbundle",
+          "WORKER_LOADER": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\products\\default\\build\\default\\intermediates\\loader\\ohosTest\\loader.json",
+          "MANIFEST_JSON": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\products\\default\\build\\default\\intermediates\\manifest\\ohosTest",
+          "OUTPUT_METADATA_JSON": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\products\\default\\build\\default\\intermediates\\hap_metadata\\ohosTest\\output_metadata.json",
+          "SOURCE_MAP_DIR": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\products\\default\\build\\default\\intermediates\\source_map\\ohosTest"
+        },
+        "BUILD_OPTION": {
+          "debuggable": true
+        }
+      }
+    },
+    "BUILD_OPTION": {
+      "default-default": {
+        "debuggable": true,
+        "copyFrom": "default",
+        "name": "debug"
+      }
+    },
+    "BUILD_PROFILE_OPT": {
+      "apiType": "stageMode",
+      "buildOption": {},
+      "buildOptionSet": [
+        {
+          "name": "release",
+          "arkOptions": {
+            "obfuscation": {
+              "ruleOptions": {
+                "enable": true,
+                "files": [
+                  "./obfuscation-rules.txt"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "name": "default"
+        },
+        {
+          "name": "debug"
+        }
+      ],
+      "targets": [
+        {
+          "name": "default"
+        },
+        {
+          "name": "ohosTest"
+        }
+      ]
+    },
+    "BUILD_CACHE_DIR": ""
+  },
+  "ohos-module-map": {
+    "SELECT_TARGET": "default",
+    "MODULE_BUILD_DIR": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\map\\build",
+    "TARGETS": {
+      "default": {
+        "SOURCE_ROOT": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\map\\src\\main",
+        "RESOURCES_PATH": [
+          "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\map\\src\\main\\resources"
+        ],
+        "BUILD_PATH": {
+          "OUTPUT_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\map\\build\\default\\outputs\\default",
+          "INTERMEDIA_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\map\\build\\default\\intermediates",
+          "JS_ASSETS_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\map\\build\\default\\intermediates\\loader_out\\default",
+          "JS_LITE_ASSETS_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\map\\build\\default\\intermediates\\loader_out_lite\\default",
+          "RES_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\map\\build\\default\\intermediates\\res\\default",
+          "RES_PROFILE_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\map\\build\\default\\intermediates\\res\\default\\resources\\base\\profile",
+          "ETS_SUPER_VISUAL_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\map\\build\\default\\cache\\default\\default@HarCompileArkTS\\esmodule",
+          "JS_SUPER_VISUAL_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\map\\build\\default\\cache\\default\\default@HarCompileJS\\jsbundle",
+          "WORKER_LOADER": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\map\\build\\default\\intermediates\\loader\\default\\loader.json",
+          "MANIFEST_JSON": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\map\\build\\default\\intermediates\\manifest\\default",
+          "OUTPUT_METADATA_JSON": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\map\\build\\default\\intermediates\\hap_metadata\\default\\output_metadata.json",
+          "SOURCE_MAP_DIR": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\map\\build\\default\\intermediates\\source_map\\default"
+        },
+        "BUILD_OPTION": {
+          "debuggable": true
+        }
+      },
+      "ohosTest": {
+        "SOURCE_ROOT": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\map\\src\\ohosTest",
+        "RESOURCES_PATH": [
+          "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\map\\src\\ohosTest\\resources"
+        ],
+        "BUILD_PATH": {
+          "OUTPUT_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\map\\build\\default\\outputs\\ohosTest",
+          "INTERMEDIA_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\map\\build\\default\\intermediates",
+          "JS_ASSETS_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\map\\build\\default\\intermediates\\loader_out\\ohosTest",
+          "JS_LITE_ASSETS_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\map\\build\\default\\intermediates\\loader_out_lite\\ohosTest",
+          "RES_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\map\\build\\default\\intermediates\\res\\ohosTest",
+          "RES_PROFILE_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\map\\build\\default\\intermediates\\res\\ohosTest\\resources\\base\\profile",
+          "ETS_SUPER_VISUAL_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\map\\build\\default\\cache\\ohosTest\\ohosTest@OhosTestCompileArkTS\\esmodule",
+          "JS_SUPER_VISUAL_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\map\\build\\default\\cache\\ohosTest\\ohosTest@OhosTestCompileJS\\jsbundle",
+          "WORKER_LOADER": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\map\\build\\default\\intermediates\\loader\\ohosTest\\loader.json",
+          "MANIFEST_JSON": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\map\\build\\default\\intermediates\\manifest\\ohosTest",
+          "OUTPUT_METADATA_JSON": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\map\\build\\default\\intermediates\\hap_metadata\\ohosTest\\output_metadata.json",
+          "SOURCE_MAP_DIR": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\map\\build\\default\\intermediates\\source_map\\ohosTest"
+        },
+        "BUILD_OPTION": {
+          "debuggable": true
+        }
+      }
+    },
+    "BUILD_OPTION": {
+      "default-default": {
+        "debuggable": true,
+        "copyFrom": "default",
+        "name": "debug"
+      }
+    },
+    "BUILD_PROFILE_OPT": {
+      "apiType": "stageMode",
+      "buildOption": {},
+      "buildOptionSet": [
+        {
+          "name": "release",
+          "arkOptions": {
+            "obfuscation": {
+              "ruleOptions": {
+                "enable": true,
+                "files": [
+                  "./obfuscation-rules.txt"
+                ]
+              },
+              "consumerFiles": [
+                "./consumer-rules.txt"
+              ]
+            }
+          }
+        },
+        {
+          "name": "default"
+        },
+        {
+          "name": "debug"
+        }
+      ],
+      "targets": [
+        {
+          "name": "default"
+        },
+        {
+          "name": "ohosTest"
+        }
+      ]
+    },
+    "BUILD_CACHE_DIR": ""
+  },
+  "ohos-module-learning": {
+    "SELECT_TARGET": "default",
+    "MODULE_BUILD_DIR": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\learning\\build",
+    "TARGETS": {
+      "default": {
+        "SOURCE_ROOT": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\learning\\src\\main",
+        "RESOURCES_PATH": [
+          "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\learning\\src\\main\\resources"
+        ],
+        "BUILD_PATH": {
+          "OUTPUT_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\learning\\build\\default\\outputs\\default",
+          "INTERMEDIA_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\learning\\build\\default\\intermediates",
+          "JS_ASSETS_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\learning\\build\\default\\intermediates\\loader_out\\default",
+          "JS_LITE_ASSETS_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\learning\\build\\default\\intermediates\\loader_out_lite\\default",
+          "RES_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\learning\\build\\default\\intermediates\\res\\default",
+          "RES_PROFILE_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\learning\\build\\default\\intermediates\\res\\default\\resources\\base\\profile",
+          "ETS_SUPER_VISUAL_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\learning\\build\\default\\cache\\default\\default@HarCompileArkTS\\esmodule",
+          "JS_SUPER_VISUAL_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\learning\\build\\default\\cache\\default\\default@HarCompileJS\\jsbundle",
+          "WORKER_LOADER": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\learning\\build\\default\\intermediates\\loader\\default\\loader.json",
+          "MANIFEST_JSON": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\learning\\build\\default\\intermediates\\manifest\\default",
+          "OUTPUT_METADATA_JSON": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\learning\\build\\default\\intermediates\\hap_metadata\\default\\output_metadata.json",
+          "SOURCE_MAP_DIR": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\learning\\build\\default\\intermediates\\source_map\\default"
+        },
+        "BUILD_OPTION": {
+          "debuggable": true
+        }
+      },
+      "ohosTest": {
+        "SOURCE_ROOT": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\learning\\src\\ohosTest",
+        "RESOURCES_PATH": [
+          "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\learning\\src\\ohosTest\\resources"
+        ],
+        "BUILD_PATH": {
+          "OUTPUT_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\learning\\build\\default\\outputs\\ohosTest",
+          "INTERMEDIA_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\learning\\build\\default\\intermediates",
+          "JS_ASSETS_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\learning\\build\\default\\intermediates\\loader_out\\ohosTest",
+          "JS_LITE_ASSETS_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\learning\\build\\default\\intermediates\\loader_out_lite\\ohosTest",
+          "RES_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\learning\\build\\default\\intermediates\\res\\ohosTest",
+          "RES_PROFILE_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\learning\\build\\default\\intermediates\\res\\ohosTest\\resources\\base\\profile",
+          "ETS_SUPER_VISUAL_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\learning\\build\\default\\cache\\ohosTest\\ohosTest@OhosTestCompileArkTS\\esmodule",
+          "JS_SUPER_VISUAL_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\learning\\build\\default\\cache\\ohosTest\\ohosTest@OhosTestCompileJS\\jsbundle",
+          "WORKER_LOADER": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\learning\\build\\default\\intermediates\\loader\\ohosTest\\loader.json",
+          "MANIFEST_JSON": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\learning\\build\\default\\intermediates\\manifest\\ohosTest",
+          "OUTPUT_METADATA_JSON": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\learning\\build\\default\\intermediates\\hap_metadata\\ohosTest\\output_metadata.json",
+          "SOURCE_MAP_DIR": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\learning\\build\\default\\intermediates\\source_map\\ohosTest"
+        },
+        "BUILD_OPTION": {
+          "debuggable": true
+        }
+      }
+    },
+    "BUILD_OPTION": {
+      "default-default": {
+        "debuggable": true,
+        "copyFrom": "default",
+        "name": "debug"
+      }
+    },
+    "BUILD_PROFILE_OPT": {
+      "apiType": "stageMode",
+      "buildOption": {},
+      "buildOptionSet": [
+        {
+          "name": "release",
+          "arkOptions": {
+            "obfuscation": {
+              "ruleOptions": {
+                "enable": true,
+                "files": [
+                  "./obfuscation-rules.txt"
+                ]
+              },
+              "consumerFiles": [
+                "./consumer-rules.txt"
+              ]
+            }
+          }
+        },
+        {
+          "name": "default"
+        },
+        {
+          "name": "debug"
+        }
+      ],
+      "targets": [
+        {
+          "name": "default"
+        },
+        {
+          "name": "ohosTest"
+        }
+      ]
+    },
+    "BUILD_CACHE_DIR": ""
+  },
+  "ohos-module-quickstart": {
+    "SELECT_TARGET": "default",
+    "MODULE_BUILD_DIR": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\quickstart\\build",
+    "TARGETS": {
+      "default": {
+        "SOURCE_ROOT": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\quickstart\\src\\main",
+        "RESOURCES_PATH": [
+          "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\quickstart\\src\\main\\resources"
+        ],
+        "BUILD_PATH": {
+          "OUTPUT_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\quickstart\\build\\default\\outputs\\default",
+          "INTERMEDIA_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\quickstart\\build\\default\\intermediates",
+          "JS_ASSETS_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\quickstart\\build\\default\\intermediates\\loader_out\\default",
+          "JS_LITE_ASSETS_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\quickstart\\build\\default\\intermediates\\loader_out_lite\\default",
+          "RES_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\quickstart\\build\\default\\intermediates\\res\\default",
+          "RES_PROFILE_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\quickstart\\build\\default\\intermediates\\res\\default\\resources\\base\\profile",
+          "ETS_SUPER_VISUAL_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\quickstart\\build\\default\\cache\\default\\default@HarCompileArkTS\\esmodule",
+          "JS_SUPER_VISUAL_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\quickstart\\build\\default\\cache\\default\\default@HarCompileJS\\jsbundle",
+          "WORKER_LOADER": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\quickstart\\build\\default\\intermediates\\loader\\default\\loader.json",
+          "MANIFEST_JSON": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\quickstart\\build\\default\\intermediates\\manifest\\default",
+          "OUTPUT_METADATA_JSON": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\quickstart\\build\\default\\intermediates\\hap_metadata\\default\\output_metadata.json",
+          "SOURCE_MAP_DIR": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\quickstart\\build\\default\\intermediates\\source_map\\default"
+        },
+        "BUILD_OPTION": {
+          "debuggable": true
+        }
+      },
+      "ohosTest": {
+        "SOURCE_ROOT": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\quickstart\\src\\ohosTest",
+        "RESOURCES_PATH": [
+          "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\quickstart\\src\\ohosTest\\resources"
+        ],
+        "BUILD_PATH": {
+          "OUTPUT_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\quickstart\\build\\default\\outputs\\ohosTest",
+          "INTERMEDIA_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\quickstart\\build\\default\\intermediates",
+          "JS_ASSETS_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\quickstart\\build\\default\\intermediates\\loader_out\\ohosTest",
+          "JS_LITE_ASSETS_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\quickstart\\build\\default\\intermediates\\loader_out_lite\\ohosTest",
+          "RES_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\quickstart\\build\\default\\intermediates\\res\\ohosTest",
+          "RES_PROFILE_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\quickstart\\build\\default\\intermediates\\res\\ohosTest\\resources\\base\\profile",
+          "ETS_SUPER_VISUAL_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\quickstart\\build\\default\\cache\\ohosTest\\ohosTest@OhosTestCompileArkTS\\esmodule",
+          "JS_SUPER_VISUAL_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\quickstart\\build\\default\\cache\\ohosTest\\ohosTest@OhosTestCompileJS\\jsbundle",
+          "WORKER_LOADER": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\quickstart\\build\\default\\intermediates\\loader\\ohosTest\\loader.json",
+          "MANIFEST_JSON": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\quickstart\\build\\default\\intermediates\\manifest\\ohosTest",
+          "OUTPUT_METADATA_JSON": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\quickstart\\build\\default\\intermediates\\hap_metadata\\ohosTest\\output_metadata.json",
+          "SOURCE_MAP_DIR": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\quickstart\\build\\default\\intermediates\\source_map\\ohosTest"
+        },
+        "BUILD_OPTION": {
+          "debuggable": true
+        }
+      }
+    },
+    "BUILD_OPTION": {
+      "default-default": {
+        "debuggable": true,
+        "copyFrom": "default",
+        "name": "debug"
+      }
+    },
+    "BUILD_PROFILE_OPT": {
+      "apiType": "stageMode",
+      "buildOption": {},
+      "buildOptionSet": [
+        {
+          "name": "release",
+          "arkOptions": {
+            "obfuscation": {
+              "ruleOptions": {
+                "enable": true,
+                "files": [
+                  "./obfuscation-rules.txt"
+                ]
+              },
+              "consumerFiles": [
+                "./consumer-rules.txt"
+              ]
+            }
+          }
+        },
+        {
+          "name": "default"
+        },
+        {
+          "name": "debug"
+        }
+      ],
+      "targets": [
+        {
+          "name": "default"
+        },
+        {
+          "name": "ohosTest"
+        }
+      ]
+    },
+    "BUILD_CACHE_DIR": ""
+  },
+  "ohos-module-utils": {
+    "SELECT_TARGET": "default",
+    "MODULE_BUILD_DIR": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\utils\\build",
+    "TARGETS": {
+      "default": {
+        "SOURCE_ROOT": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\utils\\src\\main",
+        "RESOURCES_PATH": [
+          "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\utils\\src\\main\\resources"
+        ],
+        "BUILD_PATH": {
+          "OUTPUT_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\utils\\build\\default\\outputs\\default",
+          "INTERMEDIA_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\utils\\build\\default\\intermediates",
+          "JS_ASSETS_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\utils\\build\\default\\intermediates\\loader_out\\default",
+          "JS_LITE_ASSETS_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\utils\\build\\default\\intermediates\\loader_out_lite\\default",
+          "RES_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\utils\\build\\default\\intermediates\\res\\default",
+          "RES_PROFILE_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\utils\\build\\default\\intermediates\\res\\default\\resources\\base\\profile",
+          "ETS_SUPER_VISUAL_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\utils\\build\\default\\cache\\default\\default@HarCompileArkTS\\esmodule",
+          "JS_SUPER_VISUAL_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\utils\\build\\default\\cache\\default\\default@HarCompileJS\\jsbundle",
+          "WORKER_LOADER": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\utils\\build\\default\\intermediates\\loader\\default\\loader.json",
+          "MANIFEST_JSON": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\utils\\build\\default\\intermediates\\manifest\\default",
+          "OUTPUT_METADATA_JSON": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\utils\\build\\default\\intermediates\\hap_metadata\\default\\output_metadata.json",
+          "SOURCE_MAP_DIR": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\utils\\build\\default\\intermediates\\source_map\\default"
+        },
+        "BUILD_OPTION": {
+          "debuggable": true
+        }
+      },
+      "ohosTest": {
+        "SOURCE_ROOT": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\utils\\src\\ohosTest",
+        "RESOURCES_PATH": [
+          "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\utils\\src\\ohosTest\\resources"
+        ],
+        "BUILD_PATH": {
+          "OUTPUT_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\utils\\build\\default\\outputs\\ohosTest",
+          "INTERMEDIA_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\utils\\build\\default\\intermediates",
+          "JS_ASSETS_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\utils\\build\\default\\intermediates\\loader_out\\ohosTest",
+          "JS_LITE_ASSETS_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\utils\\build\\default\\intermediates\\loader_out_lite\\ohosTest",
+          "RES_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\utils\\build\\default\\intermediates\\res\\ohosTest",
+          "RES_PROFILE_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\utils\\build\\default\\intermediates\\res\\ohosTest\\resources\\base\\profile",
+          "ETS_SUPER_VISUAL_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\utils\\build\\default\\cache\\ohosTest\\ohosTest@OhosTestCompileArkTS\\esmodule",
+          "JS_SUPER_VISUAL_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\utils\\build\\default\\cache\\ohosTest\\ohosTest@OhosTestCompileJS\\jsbundle",
+          "WORKER_LOADER": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\utils\\build\\default\\intermediates\\loader\\ohosTest\\loader.json",
+          "MANIFEST_JSON": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\utils\\build\\default\\intermediates\\manifest\\ohosTest",
+          "OUTPUT_METADATA_JSON": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\utils\\build\\default\\intermediates\\hap_metadata\\ohosTest\\output_metadata.json",
+          "SOURCE_MAP_DIR": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\utils\\build\\default\\intermediates\\source_map\\ohosTest"
+        },
+        "BUILD_OPTION": {
+          "debuggable": true
+        }
+      }
+    },
+    "BUILD_OPTION": {
+      "default-default": {
+        "debuggable": true,
+        "copyFrom": "default",
+        "name": "debug"
+      }
+    },
+    "BUILD_PROFILE_OPT": {
+      "apiType": "stageMode",
+      "buildOption": {},
+      "buildOptionSet": [
+        {
+          "name": "release",
+          "arkOptions": {
+            "obfuscation": {
+              "ruleOptions": {
+                "enable": true,
+                "files": [
+                  "./obfuscation-rules.txt"
+                ]
+              },
+              "consumerFiles": [
+                "./consumer-rules.txt"
+              ]
+            }
+          }
+        },
+        {
+          "name": "default"
+        },
+        {
+          "name": "debug"
+        }
+      ],
+      "targets": [
+        {
+          "name": "default"
+        },
+        {
+          "name": "ohosTest"
+        }
+      ]
+    },
+    "BUILD_CACHE_DIR": ""
+  },
+  "ohos-module-uicomponents": {
+    "SELECT_TARGET": "default",
+    "MODULE_BUILD_DIR": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\uicomponents\\build",
+    "TARGETS": {
+      "default": {
+        "SOURCE_ROOT": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\uicomponents\\src\\main",
+        "RESOURCES_PATH": [
+          "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\uicomponents\\src\\main\\resources"
+        ],
+        "BUILD_PATH": {
+          "OUTPUT_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\uicomponents\\build\\default\\outputs\\default",
+          "INTERMEDIA_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\uicomponents\\build\\default\\intermediates",
+          "JS_ASSETS_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\uicomponents\\build\\default\\intermediates\\loader_out\\default",
+          "JS_LITE_ASSETS_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\uicomponents\\build\\default\\intermediates\\loader_out_lite\\default",
+          "RES_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\uicomponents\\build\\default\\intermediates\\res\\default",
+          "RES_PROFILE_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\uicomponents\\build\\default\\intermediates\\res\\default\\resources\\base\\profile",
+          "ETS_SUPER_VISUAL_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\uicomponents\\build\\default\\cache\\default\\default@HarCompileArkTS\\esmodule",
+          "JS_SUPER_VISUAL_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\uicomponents\\build\\default\\cache\\default\\default@HarCompileJS\\jsbundle",
+          "WORKER_LOADER": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\uicomponents\\build\\default\\intermediates\\loader\\default\\loader.json",
+          "MANIFEST_JSON": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\uicomponents\\build\\default\\intermediates\\manifest\\default",
+          "OUTPUT_METADATA_JSON": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\uicomponents\\build\\default\\intermediates\\hap_metadata\\default\\output_metadata.json",
+          "SOURCE_MAP_DIR": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\uicomponents\\build\\default\\intermediates\\source_map\\default"
+        },
+        "BUILD_OPTION": {
+          "debuggable": true
+        }
+      },
+      "ohosTest": {
+        "SOURCE_ROOT": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\uicomponents\\src\\ohosTest",
+        "RESOURCES_PATH": [
+          "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\uicomponents\\src\\ohosTest\\resources"
+        ],
+        "BUILD_PATH": {
+          "OUTPUT_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\uicomponents\\build\\default\\outputs\\ohosTest",
+          "INTERMEDIA_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\uicomponents\\build\\default\\intermediates",
+          "JS_ASSETS_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\uicomponents\\build\\default\\intermediates\\loader_out\\ohosTest",
+          "JS_LITE_ASSETS_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\uicomponents\\build\\default\\intermediates\\loader_out_lite\\ohosTest",
+          "RES_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\uicomponents\\build\\default\\intermediates\\res\\ohosTest",
+          "RES_PROFILE_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\uicomponents\\build\\default\\intermediates\\res\\ohosTest\\resources\\base\\profile",
+          "ETS_SUPER_VISUAL_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\uicomponents\\build\\default\\cache\\ohosTest\\ohosTest@OhosTestCompileArkTS\\esmodule",
+          "JS_SUPER_VISUAL_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\uicomponents\\build\\default\\cache\\ohosTest\\ohosTest@OhosTestCompileJS\\jsbundle",
+          "WORKER_LOADER": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\uicomponents\\build\\default\\intermediates\\loader\\ohosTest\\loader.json",
+          "MANIFEST_JSON": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\uicomponents\\build\\default\\intermediates\\manifest\\ohosTest",
+          "OUTPUT_METADATA_JSON": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\uicomponents\\build\\default\\intermediates\\hap_metadata\\ohosTest\\output_metadata.json",
+          "SOURCE_MAP_DIR": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\uicomponents\\build\\default\\intermediates\\source_map\\ohosTest"
+        },
+        "BUILD_OPTION": {
+          "debuggable": true
+        }
+      }
+    },
+    "BUILD_OPTION": {
+      "default-default": {
+        "debuggable": true,
+        "copyFrom": "default",
+        "name": "debug"
+      }
+    },
+    "BUILD_PROFILE_OPT": {
+      "apiType": "stageMode",
+      "buildOption": {},
+      "buildOptionSet": [
+        {
+          "name": "release",
+          "arkOptions": {
+            "obfuscation": {
+              "ruleOptions": {
+                "enable": true,
+                "files": [
+                  "./obfuscation-rules.txt"
+                ]
+              },
+              "consumerFiles": [
+                "./consumer-rules.txt"
+              ]
+            }
+          }
+        },
+        {
+          "name": "default"
+        },
+        {
+          "name": "debug"
+        }
+      ],
+      "targets": [
+        {
+          "name": "default"
+        },
+        {
+          "name": "ohosTest"
+        }
+      ]
+    },
+    "BUILD_CACHE_DIR": ""
+  },
+  "ohos-project": {
+    "SELECT_PRODUCT_NAME": "default",
+    "MODULE_BUILD_DIR": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\build",
+    "BUNDLE_NAME": "com.huawei.quickstart",
+    "BUILD_PATH": {
+      "OUTPUT_PATH": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\build\\outputs\\default"
+    },
+    "MODULES": [
+      {
+        "name": "default",
+        "srcPath": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\products\\default",
+        "targets": [
+          {
+            "name": "default",
+            "applyToProducts": [
+              "default"
+            ]
+          }
+        ],
+        "belongProjectPath": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint"
+      },
+      {
+        "name": "map",
+        "srcPath": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\map",
+        "belongProjectPath": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint"
+      },
+      {
+        "name": "learning",
+        "srcPath": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\learning",
+        "belongProjectPath": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint"
+      },
+      {
+        "name": "quickstart",
+        "srcPath": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\features\\quickstart",
+        "belongProjectPath": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint"
+      },
+      {
+        "name": "utils",
+        "srcPath": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\utils",
+        "belongProjectPath": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint"
+      },
+      {
+        "name": "uicomponents",
+        "srcPath": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint\\commons\\uicomponents",
+        "belongProjectPath": "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint"
+      }
+    ],
+    "PROFILE_OPT": {
+      "app": {
+        "signingConfigs": [],
+        "products": [
+          {
+            "name": "default",
+            "signingConfig": "default",
+            "compatibleSdkVersion": "5.0.5(17)",
+            "targetSdkVersion": "5.0.5(17)",
+            "runtimeOS": "HarmonyOS"
+          }
+        ],
+        "buildModeSet": [
+          {
+            "name": "debug"
+          },
+          {
+            "name": "release"
+          }
+        ]
+      },
+      "modules": [
+        {
+          "name": "default",
+          "srcPath": "./products/default",
+          "targets": [
+            {
+              "name": "default",
+              "applyToProducts": [
+                "default"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "map",
+          "srcPath": "./features/map"
+        },
+        {
+          "name": "learning",
+          "srcPath": "./features/learning"
+        },
+        {
+          "name": "quickstart",
+          "srcPath": "./features/quickstart"
+        },
+        {
+          "name": "utils",
+          "srcPath": "./commons/utils"
+        },
+        {
+          "name": "uicomponents",
+          "srcPath": "./commons/uicomponents"
+        }
+      ]
+    },
+    "CONFIG_PROPERTIES": {
+      "enableSignTask": true,
+      "skipNativeIncremental": false,
+      "hvigor.keepDependency": true
+    },
+    "OVERALL_PROJECT_PATHS": [
+      "E:\\mipp\\projects\\07_ArkWebPageAdaptation\\07_StartPoint"
+    ],
+    "BUILD_CACHE_DIR": ""
+  },
+  "version": 1
+}

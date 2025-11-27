@@ -1,0 +1,10 @@
+string page_show 0x03000000
+media ic_arrow 0x03000004
+media ic_back 0x03000007
+media ic_close 0x03000008
+media ic_guide 0x03000001
+media ic_medals 0x03000002
+media ic_open 0x03000009
+media ic_prepare 0x03000003
+media ic_video 0x03000006
+media knowledge_map_banner 0x03000005

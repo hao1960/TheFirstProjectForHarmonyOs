@@ -1,0 +1,613 @@
+Ôr@Ÿªassertions¤code´customTransformCache¬dependencies¢id¤meta±moduleSideEffects¬originalCode±originalSourcemap«resolvedIds®sourcemapChainµsyntheticNamedExportsµtransformDependencies®transformFiles¨cacheAstÔrAÚ'“if (!("finalizeConstruction" in ViewPU.prototype)) {
+    Reflect.set(ViewPU.prototype, "finalizeConstruction", () => { });
+}
+//ç±»å‹ä¸å›¾æ ‡æ˜ å°„
+const TypeMapIcon = {
+    'æŒ‡å—': 'app.media.ic_guide',
+    'å‡†å¤‡': 'app.media.ic_prepare',
+    'å­¦ä¹ ä¸è·å–è¯ä¹¦': 'app.media.ic_medals',
+    'è§†é¢‘æ•™ç¨‹': 'app.media.ic_video',
+};
+export class KnowledgeMapContent extends ViewPU {
+    constructor(parent, params, __localStorage, elmtId = -1, paramsLambda = undefined, extraInfo) {
+        super(parent, __localStorage, elmtId, extraInfo);
+        if (typeof paramsLambda === "function") {
+            this.paramsGenerator_ = paramsLambda;
+        }
+        this.__section = new SynchedPropertyObjectOneWayPU(params.section, this, "section");
+        this.setInitiallyProvidedValue(params);
+        this.finalizeConstruction();
+    }
+    setInitiallyProvidedValue(params) {
+    }
+    updateStateVars(params) {
+        this.__section.reset(params.section);
+    }
+    purgeVariableDependenciesOnElmtId(rmElmtId) {
+        this.__section.purgeDependencyOnElmtId(rmElmtId);
+    }
+    aboutToBeDeleted() {
+        this.__section.aboutToBeDeleted();
+        SubscriberManager.Get().delete(this.id__());
+        this.aboutToBeDeletedInternal();
+    }
+    get section() {
+        return this.__section.get();
+    }
+    set section(newValue) {
+        this.__section.set(newValue);
+    }
+    //åŒºåŸŸ3ï¼šbuilderè‡ªå®šä¹‰å‡½æ•°
+    KnowledgeBlockLine(knowledgeBaseItem, parent = null) {
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            Row.create();
+            Row.debugLine("features/map/src/main/ets/view/KnowledgeContent.ets(55:5)", "map");
+            Row.width('100%');
+            Row.height(64);
+            Row.alignItems(VerticalAlign.Center);
+        }, Row);
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            //æ˜¾ç¤ºå›¾æ ‡
+            Image.create({ "id": -1, "type": -1, params: [TypeMapIcon[knowledgeBaseItem.type]], "bundleName": "com.huawei.quickstart", "moduleName": "map" });
+            Image.debugLine("features/map/src/main/ets/view/KnowledgeContent.ets(57:7)", "map");
+            //æ˜¾ç¤ºå›¾æ ‡
+            Image.width(20);
+            //æ˜¾ç¤ºå›¾æ ‡
+            Image.height(20);
+        }, Image);
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            //æ ‡é¢˜
+            Column.create();
+            Column.debugLine("features/map/src/main/ets/view/KnowledgeContent.ets(61:7)", "map");
+            //æ ‡é¢˜
+            Column.alignItems(HorizontalAlign.Start);
+            //æ ‡é¢˜
+            Column.margin({ left: 18 });
+        }, Column);
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            Text.create(knowledgeBaseItem.title);
+            Text.debugLine("features/map/src/main/ets/view/KnowledgeContent.ets(62:9)", "map");
+            Text.fontFamily('HarmonyHeiTi-Medium');
+            Text.fontSize(16);
+            Text.fontWeight(500);
+        }, Text);
+        Text.pop();
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            //ç±»å‹
+            Text.create(knowledgeBaseItem.type);
+            Text.debugLine("features/map/src/main/ets/view/KnowledgeContent.ets(67:9)", "map");
+            //ç±»å‹
+            Text.fontFamily('HarmonyHeiTi');
+            //ç±»å‹
+            Text.fontSize(14);
+            //ç±»å‹
+            Text.fontWeight(400);
+        }, Text);
+        //ç±»å‹
+        Text.pop();
+        //æ ‡é¢˜
+        Column.pop();
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            Blank.create();
+            Blank.debugLine("features/map/src/main/ets/view/KnowledgeContent.ets(74:7)", "map");
+        }, Blank);
+        Blank.pop();
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            //ç®­å¤´å›¾æ ‡
+            Image.create({ "id": 50331652, "type": 20000, params: [], "bundleName": "com.huawei.quickstart", "moduleName": "map" });
+            Image.debugLine("features/map/src/main/ets/view/KnowledgeContent.ets(76:7)", "map");
+            //ç®­å¤´å›¾æ ‡
+            Image.width(12);
+            //ç®­å¤´å›¾æ ‡
+            Image.height(24);
+        }, Image);
+        Row.pop();
+    }
+    //åŒºåŸŸ4
+    KnowledgeBlock(material, parent = null) {
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            Column.create();
+            Column.debugLine("features/map/src/main/ets/view/KnowledgeContent.ets(87:5)", "map");
+            Column.width('100%');
+            Column.margin({ top: 28 });
+            Column.alignItems(HorizontalAlign.Start);
+        }, Column);
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            //å‰¯æ ‡é¢˜
+            Text.create(material.subtitle);
+            Text.debugLine("features/map/src/main/ets/view/KnowledgeContent.ets(89:7)", "map");
+            //å‰¯æ ‡é¢˜
+            Text.fontFamily('HarmonyHeiTi-Medium');
+            //å‰¯æ ‡é¢˜
+            Text.fontSize(14);
+            //å‰¯æ ‡é¢˜
+            Text.fontWeight(500);
+            //å‰¯æ ‡é¢˜
+            Text.margin({ bottom: 8 });
+        }, Text);
+        //å‰¯æ ‡é¢˜
+        Text.pop();
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            List.create({ space: 12 });
+            List.debugLine("features/map/src/main/ets/view/KnowledgeContent.ets(94:7)", "map");
+            List.backgroundColor(Color.White);
+            List.borderRadius(16);
+            List.padding({ left: 12, right: 12 });
+            List.divider({
+                strokeWidth: 0.5,
+                startMargin: 38,
+                endMargin: 0,
+                color: '#F2F2F2'
+            });
+        }, List);
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            ForEach.create();
+            const forEachItemGenFunction = (_item, index) => {
+                const item = _item;
+                {
+                    const itemCreation = (elmtId, isInitialRender) => {
+                        ViewStackProcessor.StartGetAccessRecordingFor(elmtId);
+                        ListItem.create(deepRenderFunction, true);
+                        if (!isInitialRender) {
+                            ListItem.pop();
+                        }
+                        ViewStackProcessor.StopGetAccessRecording();
+                    };
+                    const itemCreation2 = (elmtId, isInitialRender) => {
+                        ListItem.create(deepRenderFunction, true);
+                        ListItem.debugLine("features/map/src/main/ets/view/KnowledgeContent.ets(96:11)", "map");
+                    };
+                    const deepRenderFunction = (elmtId, isInitialRender) => {
+                        itemCreation(elmtId, isInitialRender);
+                        this.KnowledgeBlockLine.bind(this)(item);
+                        ListItem.pop();
+                    };
+                    this.observeComponentCreation2(itemCreation2, ListItem);
+                    ListItem.pop();
+                }
+            };
+            this.forEachUpdateFunction(elmtId, material.knowledgeBase, forEachItemGenFunction, (item, index) => item.title, true, true);
+        }, ForEach);
+        ForEach.pop();
+        List.pop();
+        Column.pop();
+    }
+    initialRender() {
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            Scroll.create();
+            Scroll.debugLine("features/map/src/main/ets/view/KnowledgeContent.ets(116:5)", "map");
+            Scroll.align(Alignment.TopStart);
+            Scroll.constraintSize({ minHeight: '100%' });
+            Scroll.edgeEffect(EdgeEffect.Spring);
+            Scroll.scrollable(ScrollDirection.Vertical);
+            Scroll.scrollBar(BarState.Auto);
+            Scroll.backgroundColor('#F1F3F5');
+        }, Scroll);
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            Column.create();
+            Column.debugLine("features/map/src/main/ets/view/KnowledgeContent.ets(117:7)", "map");
+            Column.alignItems(HorizontalAlign.Start);
+            Column.padding({
+                top: 12,
+                left: 16,
+                bottom: 12,
+                right: 16
+            });
+            Column.backgroundColor('#F1F3F5');
+        }, Column);
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            Text.create(this.section?.title);
+            Text.debugLine("features/map/src/main/ets/view/KnowledgeContent.ets(118:9)", "map");
+            Text.fontFamily('HarmonyHeiTi-Bold');
+            Text.fontSize(20);
+            Text.fontWeight(700);
+            Text.fontColor(Color.Black);
+        }, Text);
+        Text.pop();
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            Text.create(this.section?.brief);
+            Text.debugLine("features/map/src/main/ets/view/KnowledgeContent.ets(123:9)", "map");
+            Text.fontFamily('HarmonyHeiTi');
+            Text.fontSize(12);
+            Text.fontColor('rgba(0,0,0,0,60)');
+            Text.textAlign(TextAlign.JUSTIFY);
+            Text.fontWeight(400);
+            Text.margin({ top: 12 });
+        }, Text);
+        Text.pop();
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            //å¾ªç¯æ¸²æŸ“åŒºåŸŸ3
+            ForEach.create();
+            const forEachItemGenFunction = _item => {
+                const material = _item;
+                this.KnowledgeBlock.bind(this)(material);
+            };
+            this.forEachUpdateFunction(elmtId, this.section?.materials, forEachItemGenFunction, (material, index) => material.subtitle, false, true);
+        }, ForEach);
+        //å¾ªç¯æ¸²æŸ“åŒºåŸŸ3
+        ForEach.pop();
+        Column.pop();
+        Scroll.pop();
+    }
+    rerender() {
+        this.updateDirtyElements();
+    }
+}
+//# sourceMappingURL=KnowledgeContent.js.mapÂÙjE:\mipp\projects\07_ArkWebPageAdaptation\07_StartPoint\features\map\src\main\ets\view\KnowledgeContent.etsÔrB›ªmoduleName±isLocalDependency¯isNodeEntryFile§pkgPath±belongProjectPath§pkgNameªpkgVersion±dependencyPkgInfo°belongModulePath§checker¬shouldEmitJs£mapÃÂÙCE:\mipp\projects\07_ArkWebPageAdaptation\07_StartPoint\features\mapÙ6E:\mipp\projects\07_ArkWebPageAdaptation\07_StartPoint£map¥1.0.0Ô  ÙCE:\mipp\projects\07_ArkWebPageAdaptation\07_StartPoint\features\mapÔrCÜ ®¬getNodeCount²getIdentifierCount®getSymbolCount¬getTypeCountµgetInstantiationCountµgetRelationCacheSizes±isUndefinedSymbol±isArgumentsSymbol¯isUnknownSymbol¯getMergedSymbol®getDiagnostics´getGlobalDiagnostics´getRecursionIdentity¶getUnmatchedProperties¹getTypeOfSymbolAtLocation¯getTypeOfSymbolÙ(getSymbolsOfParameterPropertyDeclaration·getDeclaredTypeOfSymbol³getPropertiesOfType±getPropertyOfTypeÙ"getPrivateIdentifierPropertyOfType·getTypeOfPropertyOfType²getIndexInfoOfType³getIndexInfosOfTypeºgetIndexInfosOfIndexSymbol³getSignaturesOfType²getIndexTypeOfType¬getIndexType¬getBaseTypes¸getBaseTypeOfLiteralType®getWidenedType³getTypeFromTypeNode°getParameterTypeÙ$getParameterIdentifierNameAtPosition¸getPromisedTypeOfPromise®getAwaitedType¸getReturnTypeOfSignature®isNullableType¯getNullableType²getNonNullableType²getNonOptionalType°getTypeArguments®typeToTypeNodeÙ$indexInfoToIndexSignatureDeclaration¿signatureToSignatureDeclaration²symbolToEntityName²symbolToExpression¬symbolToNodeÙ!symbolToTypeParameterDeclarations¼symbolToParameterDeclarationºtypeParameterToDeclaration±getSymbolsInScope³getSymbolAtLocation·getIndexInfosAtLocationÙ!getShorthandAssignmentValueSymbolÙ#getExportSpecifierLocalTargetSymbol·getExportSymbolOfSymbol±getTypeAtLocationÙ tryGetTypeAtLocationWithoutCheckºgetTypeOfAssignmentPatternÙ*getPropertySymbolOfDestructuringAssignment±signatureToString¬typeToString®symbolToStringµtypePredicateToString®writeSignature©writeType«writeSymbol²writeTypePredicate¼getAugmentedPropertiesOfType®getRootSymbols²getSymbolOfExpando±getContextualTypeÙ(getContextualTypeForObjectLiteralElementÙ#getContextualTypeForArgumentAtIndexÙ getContextualTypeForJsxAttribute²isContextSensitiveÙ!getTypeOfPropertyOfContextualTypeµgetFullyQualifiedNameÙ#tryGetResolvedSignatureWithoutCheck´getResolvedSignatureÙ/getResolvedSignatureForStringLiteralCompletionsÙ$getResolvedSignatureForSignatureHelpµgetExpandedParameters¹hasEffectiveRestParameterºcontainsArgumentsReference°getConstantValueµisValidPropertyAccessÙ#isValidPropertyAccessForCompletions»getSignatureFromDeclarationºisImplementationOfOverload¹getImmediateAliasedSymbol°getAliasedSymbol¯getEmitResolver²getExportsOfModule¿getExportsAndPropertiesOfModuleÙ forEachExportAndPropertyOfModule¯getSymbolWalker±getAmbientModules¹getJsxIntrinsicTagNamesAt³isOptionalParameter»tryGetMemberInModuleExportsÙ(tryGetMemberInModuleExportsAndProperties´tryFindAmbientModuleÙ(tryFindAmbientModuleWithoutAugmentations¯getApparentType¬getUnionType²isTypeAssignableTo³createAnonymousType¯createSignature¬createSymbol¯createIndexInfoªgetAnyType­getStringType­getNumberType±createPromiseType¯createArrayType¹getElementTypeOfArrayType®getBooleanType¬getFalseType«getTrueType«getVoidType°getUndefinedType«getNullType¯getESSymbolType¬getNeverType¯getOptionalType®getPromiseType²getPromiseLikeType´getAsyncIterableType²isSymbolAccessible«isArrayType«isTupleType¯isArrayLikeTypeÙ#isTypeInvalidDueToUnionDiscriminantºgetExactOptionalProperties¿getAllPossiblePropertiesOfTypesÙ(getSuggestedSymbolForNonexistentPropertyÙ#getSuggestionForNonexistentPropertyÙ,getSuggestedSymbolForNonexistentJSXAttributeÙ&getSuggestedSymbolForNonexistentSymbolÙ!getSuggestionForNonexistentSymbolÙ&getSuggestedSymbolForNonexistentModuleÙ!getSuggestionForNonexistentExportÙ+getSuggestedSymbolForNonexistentClassMember·getBaseConstraintOfType»getDefaultFromTypeParameter«resolveName¯getJsxNamespaceµgetJsxFragmentFactory¸getAccessibleSymbolChain»getTypePredicateOfSignature¹resolveExternalModuleName»resolveExternalModuleSymbol°tryGetThisTypeAt¹getTypeArgumentConstraint¸getSuggestionDiagnostics¸runWithCancellationTokenÙ3getLocalTypeParametersOfClassOrInterfaceOrTypeAlias´isDeclarationVisible´isPropertyAccessible»getTypeOnlyAliasDeclaration¿getMemberOverrideModifierStatusÙ!isTypeParameterPossiblyReferenced²getConstEnumRelate´clearConstEnumRelateµdeleteConstEnumRelateÙ$getTypeArgumentsForResolvedSignatureµgetCheckedSourceFilesÙ"collectHaveTsNoCheckFilesForLinter·clearQualifiedNameCache®isStaticRecord²isStaticSourceFile³createIntrinsicTypeÔ  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  ÃÃÚ~interface KnowledgeBaseItem{
+  type:string,
+  title:string
+}
+interface Material{
+  subtitle:string,
+  knowledgeBase:KnowledgeBaseItem[]
+}
+export interface Section{
+  title:string,
+  brief:string,
+  materials:Material[]
+}
+//ç±»å‹ä¸å›¾æ ‡æ˜ å°„
+const TypeMapIcon:Record<string,string>={
+  'æŒ‡å—':'app.media.ic_guide',
+  'å‡†å¤‡':'app.media.ic_prepare',
+  'å­¦ä¹ ä¸è·å–è¯ä¹¦':'app.media.ic_medals',
+  'è§†é¢‘æ•™ç¨‹':'app.media.ic_video',
+}
+@Component
+export struct KnowledgeMapContent{
+  //æ¸²æŸ“æ•°æ®
+  // @State  section: Section = {
+  //   "title": "å‡†å¤‡ä¸å­¦ä¹ ",
+  //   "brief": "åŠ å…¥HarmonyOSç”Ÿæ€ï¼Œæ³¨å†Œæˆä¸ºå¼€å‘è€…ï¼Œé€šè¿‡HarmonyOSè¯¾ç¨‹äº†è§£åŸºæœ¬æ¦‚å¿µå’ŒåŸºç¡€çŸ¥è¯†ï¼Œè½»æ¾å¼€å¯HarmonyOSçš„å¼€å‘æ—…ç¨‹ã€‚",
+  //   "materials": [
+  //     {
+  //       "subtitle": "HarmonyOSç®€ä»‹",
+  //       "knowledgeBase": [
+  //         { "type": "å‡†å¤‡", "title": "æ³¨å†Œè´¦å·" },
+  //         { "type": "å‡†å¤‡", "title": "å®åè®¤è¯" },
+  //         { "type": "å­¦ä¹ ä¸è·å–è¯ä¹¦", "title": "HarmonyOSç¬¬ä¸€è¯¾" },
+  //         { "type": "å­¦ä¹ ä¸è·å–è¯ä¹¦", "title": "HarmonyOSåº”ç”¨å¼€å‘è€…åŸºç¡€è®¤è¯" }
+  //       ]
+  //     },
+  //     {
+  //       "subtitle": "èµ‹èƒ½å¥—ä»¶ä»‹ç»",
+  //       "knowledgeBase": [
+  //         { "type": "æŒ‡å—", "title": "å¼€å‘" },
+  //         { "type": "æŒ‡å—", "title": "æœ€ä½³å®è·µ" },
+  //         { "type": "æŒ‡å—", "title": "APIå‚è€ƒ" },
+  //         { "type": "æŒ‡å—", "title": "è§†é¢‘è¯¾ç¨‹" },
+  //         { "type": "æŒ‡å—", "title": "Codelabs" },
+  //         { "type": "æŒ‡å—", "title": "FAQ" }
+  //       ]
+  //     }
+  //   ]
+  // };
+  @Prop section:Section;
+
+  //åŒºåŸŸ3ï¼šbuilderè‡ªå®šä¹‰å‡½æ•°
+  @Builder
+  KnowledgeBlockLine(knowledgeBaseItem:KnowledgeBaseItem){
+    Row(){
+      //æ˜¾ç¤ºå›¾æ ‡
+      Image($r(TypeMapIcon[knowledgeBaseItem.type]))
+        .width(20)
+        .height(20)
+      //æ ‡é¢˜
+      Column(){
+        Text(knowledgeBaseItem.title)
+          .fontFamily('HarmonyHeiTi-Medium')
+          .fontSize(16)
+          .fontWeight(500)
+        //ç±»å‹
+        Text(knowledgeBaseItem.type)
+          .fontFamily('HarmonyHeiTi')
+          .fontSize(14)
+          .fontWeight(400)
+      }
+      .alignItems(HorizontalAlign.Start)//èµ·å§‹ç«¯å¯¹é½
+      .margin({left:18})
+      Blank()
+      //ç®­å¤´å›¾æ ‡
+      Image($r('app.media.ic_arrow'))
+        .width(12)
+        .height(24)
+    }
+    .width('100%')
+    .height(64)
+    .alignItems(VerticalAlign.Center)
+  }
+  //åŒºåŸŸ4
+  @Builder
+  KnowledgeBlock(material:Material){
+    Column(){
+      //å‰¯æ ‡é¢˜
+      Text(material.subtitle)
+        .fontFamily('HarmonyHeiTi-Medium')
+        .fontSize(14)
+        .fontWeight(500)
+        .margin({bottom:8})
+      List({space:12}){
+        ForEach(material.knowledgeBase,(item:KnowledgeBaseItem,index:number)=>{
+          ListItem(){
+            this.KnowledgeBlockLine(item)
+          }
+        },(item:KnowledgeBaseItem,index:number)=>item.title)
+      }
+      .backgroundColor(Color.White)
+      .borderRadius(16)
+      .padding({left:12,right:12})
+      .divider({
+        strokeWidth:0.5,
+        startMargin:38,
+        endMargin:0,
+        color:'#F2F2F2'
+      })
+    }
+    .width('100%')
+    .margin({top:28})
+    .alignItems(HorizontalAlign.Start)
+  }
+  build(){
+    Scroll() {
+      Column() {
+        Text(this.section?.title)
+          .fontFamily('HarmonyHeiTi-Bold')
+          .fontSize(20)
+          .fontWeight(700)
+          .fontColor(Color.Black)
+        Text(this.section?.brief)
+          .fontFamily('HarmonyHeiTi')
+          .fontSize(12)
+          .fontColor('rgba(0,0,0,0,60)')
+          .textAlign(TextAlign.JUSTIFY)
+          .fontWeight(400)
+          .margin({ top: 12 })
+        //å¾ªç¯æ¸²æŸ“åŒºåŸŸ3
+        ForEach(this.section?.materials, (material: Material) => {
+          this.KnowledgeBlock(material)
+        }, (material: Material, index: number) => material.subtitle)
+      }
+      .alignItems(HorizontalAlign.Start)
+      .padding({
+        top: 12,
+        left: 16,
+        bottom: 12,
+        right: 16
+      })
+      .backgroundColor('#F1F3F5')
+    }
+    .align(Alignment.TopStart)
+    .constraintSize({minHeight:'100%'})
+    .edgeEffect(EdgeEffect.Spring)
+    .scrollable(ScrollDirection.Vertical)
+    .scrollBar(BarState.Auto)
+    .backgroundColor('#F1F3F5')
+  }
+}ÔrD•§version¨mappings¥names§sources®sourcesContentÜ ì‘”   ‘”   ‘”  ‘”  ‘”  ‘”  ‘”   ‘”   ‘”  ‘”  5‘”  6‘”  8‘”  <‘”  <‘”  ÌR‘”  ÌU‘”  ÌV‘”  ÌV‘”  ÌX‘”  Ì]‘”  Ì]‘”  Ìh‘”  Ìi‘”  Ìj‘”  Ìk‘”  Ìl‘”  Ì`‘”  Ì^‘”  Ìq‘”  Ìr‘”  Ìs‘”  Ìs‘”  Ìs‘”  Ìs‘”  Ìs‘”  Ìt‘”  Ìˆ‘”  Ì‰‘”  ÌŠ‘”  Ì‹‘”  ÌŒ‘”  Ìu‘”  Ìu‘”  Ìz‘”  Ìz‘”  Ìz‘”  Ìƒ
+‘”  Ì‚‘”  Ì•‘ÙjE:\mipp\projects\07_ArkWebPageAdaptation\07_StartPoint\features\map\src\main\ets\view\KnowledgeContent.ets‘Ú~interface KnowledgeBaseItem{
+  type:string,
+  title:string
+}
+interface Material{
+  subtitle:string,
+  knowledgeBase:KnowledgeBaseItem[]
+}
+export interface Section{
+  title:string,
+  brief:string,
+  materials:Material[]
+}
+//ç±»å‹ä¸å›¾æ ‡æ˜ å°„
+const TypeMapIcon:Record<string,string>={
+  'æŒ‡å—':'app.media.ic_guide',
+  'å‡†å¤‡':'app.media.ic_prepare',
+  'å­¦ä¹ ä¸è·å–è¯ä¹¦':'app.media.ic_medals',
+  'è§†é¢‘æ•™ç¨‹':'app.media.ic_video',
+}
+@Component
+export struct KnowledgeMapContent{
+  //æ¸²æŸ“æ•°æ®
+  // @State  section: Section = {
+  //   "title": "å‡†å¤‡ä¸å­¦ä¹ ",
+  //   "brief": "åŠ å…¥HarmonyOSç”Ÿæ€ï¼Œæ³¨å†Œæˆä¸ºå¼€å‘è€…ï¼Œé€šè¿‡HarmonyOSè¯¾ç¨‹äº†è§£åŸºæœ¬æ¦‚å¿µå’ŒåŸºç¡€çŸ¥è¯†ï¼Œè½»æ¾å¼€å¯HarmonyOSçš„å¼€å‘æ—…ç¨‹ã€‚",
+  //   "materials": [
+  //     {
+  //       "subtitle": "HarmonyOSç®€ä»‹",
+  //       "knowledgeBase": [
+  //         { "type": "å‡†å¤‡", "title": "æ³¨å†Œè´¦å·" },
+  //         { "type": "å‡†å¤‡", "title": "å®åè®¤è¯" },
+  //         { "type": "å­¦ä¹ ä¸è·å–è¯ä¹¦", "title": "HarmonyOSç¬¬ä¸€è¯¾" },
+  //         { "type": "å­¦ä¹ ä¸è·å–è¯ä¹¦", "title": "HarmonyOSåº”ç”¨å¼€å‘è€…åŸºç¡€è®¤è¯" }
+  //       ]
+  //     },
+  //     {
+  //       "subtitle": "èµ‹èƒ½å¥—ä»¶ä»‹ç»",
+  //       "knowledgeBase": [
+  //         { "type": "æŒ‡å—", "title": "å¼€å‘" },
+  //         { "type": "æŒ‡å—", "title": "æœ€ä½³å®è·µ" },
+  //         { "type": "æŒ‡å—", "title": "APIå‚è€ƒ" },
+  //         { "type": "æŒ‡å—", "title": "è§†é¢‘è¯¾ç¨‹" },
+  //         { "type": "æŒ‡å—", "title": "Codelabs" },
+  //         { "type": "æŒ‡å—", "title": "FAQ" }
+  //       ]
+  //     }
+  //   ]
+  // };
+  @Prop section:Section;
+
+  //åŒºåŸŸ3ï¼šbuilderè‡ªå®šä¹‰å‡½æ•°
+  @Builder
+  KnowledgeBlockLine(knowledgeBaseItem:KnowledgeBaseItem){
+    Row(){
+      //æ˜¾ç¤ºå›¾æ ‡
+      Image($r(TypeMapIcon[knowledgeBaseItem.type]))
+        .width(20)
+        .height(20)
+      //æ ‡é¢˜
+      Column(){
+        Text(knowledgeBaseItem.title)
+          .fontFamily('HarmonyHeiTi-Medium')
+          .fontSize(16)
+          .fontWeight(500)
+        //ç±»å‹
+        Text(knowledgeBaseItem.type)
+          .fontFamily('HarmonyHeiTi')
+          .fontSize(14)
+          .fontWeight(400)
+      }
+      .alignItems(HorizontalAlign.Start)//èµ·å§‹ç«¯å¯¹é½
+      .margin({left:18})
+      Blank()
+      //ç®­å¤´å›¾æ ‡
+      Image($r('app.media.ic_arrow'))
+        .width(12)
+        .height(24)
+    }
+    .width('100%')
+    .height(64)
+    .alignItems(VerticalAlign.Center)
+  }
+  //åŒºåŸŸ4
+  @Builder
+  KnowledgeBlock(material:Material){
+    Column(){
+      //å‰¯æ ‡é¢˜
+      Text(material.subtitle)
+        .fontFamily('HarmonyHeiTi-Medium')
+        .fontSize(14)
+        .fontWeight(500)
+        .margin({bottom:8})
+      List({space:12}){
+        ForEach(material.knowledgeBase,(item:KnowledgeBaseItem,index:number)=>{
+          ListItem(){
+            this.KnowledgeBlockLine(item)
+          }
+        },(item:KnowledgeBaseItem,index:number)=>item.title)
+      }
+      .backgroundColor(Color.White)
+      .borderRadius(16)
+      .padding({left:12,right:12})
+      .divider({
+        strokeWidth:0.5,
+        startMargin:38,
+        endMargin:0,
+        color:'#F2F2F2'
+      })
+    }
+    .width('100%')
+    .margin({top:28})
+    .alignItems(HorizontalAlign.Start)
+  }
+  build(){
+    Scroll() {
+      Column() {
+        Text(this.section?.title)
+          .fontFamily('HarmonyHeiTi-Bold')
+          .fontSize(20)
+          .fontWeight(700)
+          .fontColor(Color.Black)
+        Text(this.section?.brief)
+          .fontFamily('HarmonyHeiTi')
+          .fontSize(12)
+          .fontColor('rgba(0,0,0,0,60)')
+          .textAlign(TextAlign.JUSTIFY)
+          .fontWeight(400)
+          .margin({ top: 12 })
+        //å¾ªç¯æ¸²æŸ“åŒºåŸŸ3
+        ForEach(this.section?.materials, (material: Material) => {
+          this.KnowledgeBlock(material)
+        }, (material: Material, index: number) => material.subtitle)
+      }
+      .alignItems(HorizontalAlign.Start)
+      .padding({
+        top: 12,
+        left: 16,
+        bottom: 12,
+        right: 16
+      })
+      .backgroundColor('#F1F3F5')
+    }
+    .align(Alignment.TopStart)
+    .constraintSize({minHeight:'100%'})
+    .edgeEffect(EdgeEffect.Spring)
+    .scrollable(ScrollDirection.Vertical)
+    .scrollBar(BarState.Auto)
+    .backgroundColor('#F1F3F5')
+  }
+}A‘ÔrE’§missing¦pluginÃ¦genAbcÂÔ  ÔrF”²dynamicImportCache¹exportAllDeclarationCache»exportNamedDeclarationCache«importCache‘ÔrG–¤type¥start£end«declarationªspecifiers¦source¶ExportNamedDeclarationÍ4Í&•ÔrH–¤type¥start£end¢idªsuperClass¤body°ClassDeclarationÍ;Í&•ÔrI”¤type¥start£end¤nameªIdentifierÍAÍT³KnowledgeMapContentIªIdentifierÍ]Íc¦ViewPUÔrJ”¤type¥start£end¤body©ClassBodyÍdÍ&•›ÔrK˜¤type¥start£end¦static¨computed£key¤kind¥value°MethodDefinitionÍkÍ2ÂÂIªIdentifierÍkÍv«constructor«constructorÔrL™¤type¥start£end¢idªexpression©generator¥async¦params¤body²FunctionExpressionÍvÍ2ÀÂÂÂ–IªIdentifierÍwÍ}¦parentIªIdentifierÍÍ…¦paramsIªIdentifierÍ‡Í•®__localStorageÔrM•¤type¥start£end¤left¥right±AssignmentPatternÍ—Í¢IªIdentifierÍ—Í¦elmtIdÔrN–¤type¥start£end¨operator¦prefix¨argument¯UnaryExpressionÍ Í¢¡-ÃÔrO•¤type¥start£end¥value£raw§LiteralÍ¡Í¢¡1M±AssignmentPatternÍ¤Í¼IªIdentifierÍ¤Í°¬paramsLambdaIªIdentifierÍ³Í¼©undefinedIªIdentifierÍ¾ÍÇ©extraInfoJ®BlockStatementÍÉÍ2•ÔrP”¤type¥start£endªexpression³ExpressionStatementÍÔÍÔrQ–¤type¥start£end¦callee©arguments¨optional®CallExpressionÍÔÍÔrR“¤type¥start£end¥SuperÍÔÍÙ”IªIdentifierÍÚÍà¦parentIªIdentifierÍâÍğ®__localStorageIªIdentifierÍòÍø¦elmtIdIªIdentifierÍúÍ©extraInfoÂÔrS–¤type¥start£end¤testªconsequent©alternate«IfStatementÍÍvÔrT–¤type¥start£end¤left¨operator¥right°BinaryExpressionÍÍ5N¯UnaryExpressionÍÍ&¦typeofÃIªIdentifierÍÍ&¬paramsLambda£===O§LiteralÍ+Í5¨functionª"function"J®BlockStatementÍ7Ív‘P³ExpressionStatementÍFÍkÔrU–¤type¥start£end¨operator¤left¥right´AssignmentExpressionÍFÍj¡=ÔrV—¤type¥start£end¦object¨property¨computed¨optional°MemberExpressionÍFÍ[R®ThisExpressionÍFÍJIªIdentifierÍKÍ[°paramsGenerator_ÂÂIªIdentifierÍ^Íj¬paramsLambdaÀP³ExpressionStatementÍ€ÍÔU´AssignmentExpressionÍ€ÍÓ¡=V°MemberExpressionÍ€ÍR®ThisExpressionÍ€Í„IªIdentifierÍ…Í©__sectionÂÂÔrW•¤type¥start£end¦callee©arguments­NewExpressionÍ‘ÍÓIªIdentifierÍ•Í²½SynchedPropertyObjectOneWayPU“V°MemberExpressionÍ³ÍÁIªIdentifierÍ³Í¹¦paramsIªIdentifierÍºÍÁ§sectionÂÂR®ThisExpressionÍÃÍÇO§LiteralÍÉÍÒ§section©"section"P³ExpressionStatementÍŞÍQ®CallExpressionÍŞÍV°MemberExpressionÍŞÍüR®ThisExpressionÍŞÍâIªIdentifierÍãÍü¹setInitiallyProvidedValueÂÂ‘IªIdentifierÍıÍ¦paramsÂP³ExpressionStatementÍÍ+Q®CallExpressionÍÍ*V°MemberExpressionÍÍ(R®ThisExpressionÍÍIªIdentifierÍÍ(´finalizeConstructionÂÂÂK°MethodDefinitionÍ8ÍbÂÂIªIdentifierÍ8ÍQ¹setInitiallyProvidedValue¦methodL²FunctionExpressionÍQÍbÀÂÂÂ‘IªIdentifierÍRÍX¦paramsJ®BlockStatementÍZÍbK°MethodDefinitionÍhÍ·ÂÂIªIdentifierÍhÍw¯updateStateVars¦methodL²FunctionExpressionÍwÍ·ÀÂÂÂ‘IªIdentifierÍxÍ~¦paramsJ®BlockStatementÍ€Í·‘P³ExpressionStatementÍ‹Í°Q®CallExpressionÍ‹Í¯V°MemberExpressionÍ‹ÍŸV°MemberExpressionÍ‹Í™R®ThisExpressionÍ‹ÍIªIdentifierÍÍ™©__sectionÂÂIªIdentifierÍšÍŸ¥resetÂÂ‘V°MemberExpressionÍ Í®IªIdentifierÍ Í¦¦paramsIªIdentifierÍ§Í®§sectionÂÂÂK°MethodDefinitionÍ½Í,ÂÂIªIdentifierÍ½ÍŞÙ!purgeVariableDependenciesOnElmtId¦methodL²FunctionExpressionÍŞÍ,ÀÂÂÂ‘IªIdentifierÍßÍç¨rmElmtIdJ®BlockStatementÍéÍ,‘P³ExpressionStatementÍôÍ%Q®CallExpressionÍôÍ$V°MemberExpressionÍôÍV°MemberExpressionÍôÍR®ThisExpressionÍôÍøIªIdentifierÍùÍ©__sectionÂÂIªIdentifierÍÍ·purgeDependencyOnElmtIdÂÂ‘IªIdentifierÍÍ#¨rmElmtIdÂK°MethodDefinitionÍ2ÍÙÂÂIªIdentifierÍ2ÍB°aboutToBeDeleted¦methodL²FunctionExpressionÍBÍÙÀÂÂÂJ®BlockStatementÍEÍÙ“P³ExpressionStatementÍPÍrQ®CallExpressionÍPÍqV°MemberExpressionÍPÍoV°MemberExpressionÍPÍ^R®ThisExpressionÍPÍTIªIdentifierÍUÍ^©__sectionÂÂIªIdentifierÍ_Ío°aboutToBeDeletedÂÂÂP³ExpressionStatementÍ|Í¨Q®CallExpressionÍ|Í§V°MemberExpressionÍ|ÍšQ®CallExpressionÍ|Í“V°MemberExpressionÍ|Í‘IªIdentifierÍ|Í±SubscriberManagerIªIdentifierÍÍ‘£GetÂÂÂIªIdentifierÍ”Íš¦deleteÂÂ‘Q®CallExpressionÍ›Í¦V°MemberExpressionÍ›Í¤R®ThisExpressionÍ›ÍŸIªIdentifierÍ Í¤¤id__ÂÂÂÂP³ExpressionStatementÍ²ÍÒQ®CallExpressionÍ²ÍÑV°MemberExpressionÍ²ÍÏR®ThisExpressionÍ²Í¶IªIdentifierÍ·ÍÏ¸aboutToBeDeletedInternalÂÂÂK°MethodDefinitionÍßÍÂÂIªIdentifierÍãÍê§section£getL²FunctionExpressionÍêÍÀÂÂÂJ®BlockStatementÍíÍ‘ÔrX”¤type¥start£end¨argument¯ReturnStatementÍøÍQ®CallExpressionÍÿÍV°MemberExpressionÍÿÍV°MemberExpressionÍÿÍR®ThisExpressionÍÿÍIªIdentifierÍÍ©__sectionÂÂIªIdentifierÍÍ£getÂÂÂK°MethodDefinitionÍ!ÍfÂÂIªIdentifierÍ%Í,§section£setL²FunctionExpressionÍ,ÍfÀÂÂÂ‘IªIdentifierÍ-Í5¨newValueJ®BlockStatementÍ7Íf‘P³ExpressionStatementÍBÍ_Q®CallExpressionÍBÍ^V°MemberExpressionÍBÍTV°MemberExpressionÍBÍPR®ThisExpressionÍBÍFIªIdentifierÍGÍP©__sectionÂÂIªIdentifierÍQÍT£setÂÂ‘IªIdentifierÍUÍ]¨newValueÂK°MethodDefinitionÍ„ÍxÂÂIªIdentifierÍ„Í–²KnowledgeBlockLine¦methodL²FunctionExpressionÍ–ÍxÀÂÂÂ’IªIdentifierÍ—Í¨±knowledgeBaseItemM±AssignmentPatternÍªÍ·IªIdentifierÍªÍ°¦parentO§LiteralÍ³Í·À¤nullJ®BlockStatementÍ¹ÍxœP³ExpressionStatementÍÄÍşQ®CallExpressionÍÄÍıV°MemberExpressionÍÄÍâR®ThisExpressionÍÄÍÈIªIdentifierÍÉÍâ¹observeComponentCreation2ÂÂ’L·ArrowFunctionExpressionÍãÍ÷ÀÂÂÂ’IªIdentifierÍäÍê¦elmtIdIªIdentifierÍìÍû¯isInitialRenderJ®BlockStatementÍ Í÷•P³ExpressionStatementÍÍQ®CallExpressionÍÍV°MemberExpressionÍÍIªIdentifierÍÍ£RowIªIdentifierÍÍ¦createÂÂÂP³ExpressionStatementÍ*Í|Q®CallExpressionÍ*Í{V°MemberExpressionÍ*Í7IªIdentifierÍ*Í-£RowIªIdentifierÍ.Í7©debugLineÂÂ’O§LiteralÍ8ÍsÙ9features/map/src/main/ets/view/KnowledgeContent.ets(55:5)Ù;"features/map/src/main/ets/view/KnowledgeContent.ets(55:5)"O§LiteralÍuÍz£map¥"map"ÂP³ExpressionStatementÍŠÍœQ®CallExpressionÍŠÍ›V°MemberExpressionÍŠÍ“IªIdentifierÍŠÍ£RowIªIdentifierÍÍ“¥widthÂÂ‘O§LiteralÍ”Íš¤100%¦'100%'ÂP³ExpressionStatementÍªÍ¹Q®CallExpressionÍªÍ¸V°MemberExpressionÍªÍ´IªIdentifierÍªÍ­£RowIªIdentifierÍ®Í´¦heightÂÂ‘O§LiteralÍµÍ·Ì@¢64ÂP³ExpressionStatementÍÇÍìQ®CallExpressionÍÇÍëV°MemberExpressionÍÇÍÕIªIdentifierÍÇÍÊ£RowIªIdentifierÍËÍÕªalignItemsÂÂ‘V°MemberExpressionÍÖÍêIªIdentifierÍÖÍã­VerticalAlignIªIdentifierÍäÍê¦CenterÂÂÂIªIdentifierÍùÍü£RowÂP³ExpressionStatementÍÍÔQ®CallExpressionÍÍÓV°MemberExpressionÍÍ&R®ThisExpressionÍÍIªIdentifierÍÍ&¹observeComponentCreation2ÂÂ’L·ArrowFunctionExpressionÍ'ÍËÀÂÂÂ’IªIdentifierÍ(Í.¦elmtIdIªIdentifierÍ0Í?¯isInitialRenderJ®BlockStatementÍDÍË”P³ExpressionStatementÍgÍùQ®CallExpressionÍgÍøV°MemberExpressionÍgÍsIªIdentifierÍgÍl¥ImageIªIdentifierÍmÍs¦createÂÂ‘ÔrY”¤type¥start£endªproperties°ObjectExpressionÍtÍ÷•ÔrZ™¤type¥start£end¦method©shorthand¨computed£key¥value¤kind¨PropertyÍvÍ~ÂÂÂO§LiteralÍvÍz¢id¤"id"N¯UnaryExpressionÍ|Í~¡-ÃO§LiteralÍ}Í~¡1¤initZ¨PropertyÍ€ÍŠÂÂÂO§LiteralÍ€Í†¤type¦"type"N¯UnaryExpressionÍˆÍŠ¡-ÃO§LiteralÍ‰ÍŠ¡1¤initZ¨PropertyÍŒÍ¹ÂÂÂIªIdentifierÍŒÍ’¦paramsÔr[”¤type¥start£end¨elements¯ArrayExpressionÍ”Í¹‘V°MemberExpressionÍ•Í¸IªIdentifierÍ•Í «TypeMapIconV°MemberExpressionÍ¡Í·IªIdentifierÍ¡Í²±knowledgeBaseItemIªIdentifierÍ³Í·¤typeÂÂÃÂ¤initZ¨PropertyÍ»ÍàÂÂÂO§LiteralÍ»ÍÇªbundleName¬"bundleName"O§LiteralÍÉÍàµcom.huawei.quickstart·"com.huawei.quickstart"¤initZ¨PropertyÍâÍõÂÂÂO§LiteralÍâÍîªmoduleName¬"moduleName"O§LiteralÍğÍõ£map¥"map"¤initÂP³ExpressionStatementÍÍ[Q®CallExpressionÍÍZV°MemberExpressionÍÍIªIdentifierÍÍ¥ImageIªIdentifierÍÍ©debugLineÂÂ’O§LiteralÍÍRÙ9features/map/src/main/ets/view/KnowledgeContent.ets(57:7)Ù;"features/map/src/main/ets/view/KnowledgeContent.ets(57:7)"O§LiteralÍTÍY£map¥"map"ÂP³ExpressionStatementÍ}ÍQ®CallExpressionÍ}ÍŒV°MemberExpressionÍ}ÍˆIªIdentifierÍ}Í‚¥ImageIªIdentifierÍƒÍˆ¥widthÂÂ‘O§LiteralÍ‰Í‹¢20ÂP³ExpressionStatementÍ¯ÍÀQ®CallExpressionÍ¯Í¿V°MemberExpressionÍ¯Í»IªIdentifierÍ¯Í´¥ImageIªIdentifierÍµÍ»¦heightÂÂ‘O§LiteralÍ¼Í¾¢20ÂIªIdentifierÍÍÍÒ¥ImageÂP³ExpressionStatementÍŞÍ
+HQ®CallExpressionÍŞÍ
+GV°MemberExpressionÍŞÍüR®ThisExpressionÍŞÍâIªIdentifierÍãÍü¹observeComponentCreation2ÂÂ’L·ArrowFunctionExpressionÍıÍ
+>ÀÂÂÂ’IªIdentifierÍşÍ	¦elmtIdIªIdentifierÍ	Í	¯isInitialRenderJ®BlockStatementÍ	Í
+>”P³ExpressionStatementÍ	;Í	KQ®CallExpressionÍ	;Í	JV°MemberExpressionÍ	;Í	HIªIdentifierÍ	;Í	A¦ColumnIªIdentifierÍ	BÍ	H¦createÂÂÂP³ExpressionStatementÍ	YÍ	®Q®CallExpressionÍ	YÍ	­V°MemberExpressionÍ	YÍ	iIªIdentifierÍ	YÍ	_¦ColumnIªIdentifierÍ	`Í	i©debugLineÂÂ’O§LiteralÍ	jÍ	¥Ù9features/map/src/main/ets/view/KnowledgeContent.ets(61:7)Ù;"features/map/src/main/ets/view/KnowledgeContent.ets(61:7)"O§LiteralÍ	§Í	¬£map¥"map"ÂP³ExpressionStatementÍ	ÎÍ	÷Q®CallExpressionÍ	ÎÍ	öV°MemberExpressionÍ	ÎÍ	ßIªIdentifierÍ	ÎÍ	Ô¦ColumnIªIdentifierÍ	ÕÍ	ßªalignItemsÂÂ‘V°MemberExpressionÍ	àÍ	õIªIdentifierÍ	àÍ	ï¯HorizontalAlignIªIdentifierÍ	ğÍ	õ¥StartÂÂÂP³ExpressionStatementÍ
+Í
+3Q®CallExpressionÍ
+Í
+2V°MemberExpressionÍ
+Í
+$IªIdentifierÍ
+Í
+¦ColumnIªIdentifierÍ
+Í
+$¦marginÂÂ‘Y°ObjectExpressionÍ
+%Í
+1‘Z¨PropertyÍ
+'Í
+/ÂÂÂIªIdentifierÍ
+'Í
++¤leftO§LiteralÍ
+-Í
+/¢18¤initÂIªIdentifierÍ
+@Í
+F¦ColumnÂP³ExpressionStatementÍ
+RÍ®Q®CallExpressionÍ
+RÍ­V°MemberExpressionÍ
+RÍ
+pR®ThisExpressionÍ
+RÍ
+VIªIdentifierÍ
+WÍ
+p¹observeComponentCreation2ÂÂ’L·ArrowFunctionExpressionÍ
+qÍ¦ÀÂÂÂ’IªIdentifierÍ
+rÍ
+x¦elmtIdIªIdentifierÍ
+zÍ
+‰¯isInitialRenderJ®BlockStatementÍ
+Í¦•P³ExpressionStatementÍ
+Í
+ÂQ®CallExpressionÍ
+Í
+ÁV°MemberExpressionÍ
+Í
+¨IªIdentifierÍ
+Í
+¡¤TextIªIdentifierÍ
+¢Í
+¨¦createÂÂ‘V°MemberExpressionÍ
+©Í
+ÀIªIdentifierÍ
+©Í
+º±knowledgeBaseItemIªIdentifierÍ
+»Í
+À¥titleÂÂÂP³ExpressionStatementÍ
+ĞÍ#Q®CallExpressionÍ
+ĞÍ"V°MemberExpressionÍ
+ĞÍ
+ŞIªIdentifierÍ
+ĞÍ
+Ô¤TextIªIdentifierÍ
+ÕÍ
+Ş©debugLineÂÂ’O§LiteralÍ
+ßÍÙ9features/map/src/main/ets/view/KnowledgeContent.ets(62:9)Ù;"features/map/src/main/ets/view/KnowledgeContent.ets(62:9)"O§LiteralÍÍ!£map¥"map"ÂP³ExpressionStatementÍ1ÍXQ®CallExpressionÍ1ÍWV°MemberExpressionÍ1Í@IªIdentifierÍ1Í5¤TextIªIdentifierÍ6Í@ªfontFamilyÂÂ‘O§LiteralÍAÍV³HarmonyHeiTi-Mediumµ'HarmonyHeiTi-Medium'ÂP³ExpressionStatementÍfÍxQ®CallExpressionÍfÍwV°MemberExpressionÍfÍsIªIdentifierÍfÍj¤TextIªIdentifierÍkÍs¨fontSizeÂÂ‘O§LiteralÍtÍv¢16ÂP³ExpressionStatementÍ†Í›Q®CallExpressionÍ†ÍšV°MemberExpressionÍ†Í•IªIdentifierÍ†ÍŠ¤TextIªIdentifierÍ‹Í•ªfontWeightÂÂ‘O§LiteralÍ–Í™Íô£500ÂIªIdentifierÍ¨Í¬¤TextÂP³ExpressionStatementÍ¸ÍÃQ®CallExpressionÍ¸ÍÂV°MemberExpressionÍ¸ÍÀIªIdentifierÍ¸Í¼¤TextIªIdentifierÍ½ÍÀ£popÂÂÂP³ExpressionStatementÍÍÍiQ®CallExpressionÍÍÍhV°MemberExpressionÍÍÍëR®ThisExpressionÍÍÍÑIªIdentifierÍÒÍë¹observeComponentCreation2ÂÂ’L·ArrowFunctionExpressionÍìÍaÀÂÂÂ’IªIdentifierÍíÍó¦elmtIdIªIdentifierÍõÍ¯isInitialRenderJ®BlockStatementÍ	Ía•P³ExpressionStatementÍ*ÍNQ®CallExpressionÍ*ÍMV°MemberExpressionÍ*Í5IªIdentifierÍ*Í.¤TextIªIdentifierÍ/Í5¦createÂÂ‘V°MemberExpressionÍ6ÍLIªIdentifierÍ6ÍG±knowledgeBaseItemIªIdentifierÍHÍL¤typeÂÂÂP³ExpressionStatementÍ\Í¯Q®CallExpressionÍ\Í®V°MemberExpressionÍ\ÍjIªIdentifierÍ\Í`¤TextIªIdentifierÍaÍj©debugLineÂÂ’O§LiteralÍkÍ¦Ù9features/map/src/main/ets/view/KnowledgeContent.ets(67:9)Ù;"features/map/src/main/ets/view/KnowledgeContent.ets(67:9)"O§LiteralÍ¨Í­£map¥"map"ÂP³ExpressionStatementÍÏÍïQ®CallExpressionÍÏÍîV°MemberExpressionÍÏÍŞIªIdentifierÍÏÍÓ¤TextIªIdentifierÍÔÍŞªfontFamilyÂÂ‘O§LiteralÍßÍí¬HarmonyHeiTi®'HarmonyHeiTi'ÂP³ExpressionStatementÍÍ!Q®CallExpressionÍÍ V°MemberExpressionÍÍIªIdentifierÍÍ¤TextIªIdentifierÍÍ¨fontSizeÂÂ‘O§LiteralÍÍ¢14ÂP³ExpressionStatementÍAÍVQ®CallExpressionÍAÍUV°MemberExpressionÍAÍPIªIdentifierÍAÍE¤TextIªIdentifierÍFÍPªfontWeightÂÂ‘O§LiteralÍQÍTÍ£400ÂIªIdentifierÍcÍg¤TextÂP³ExpressionStatementÍÍŒQ®CallExpressionÍÍ‹V°MemberExpressionÍÍ‰IªIdentifierÍÍ…¤TextIªIdentifierÍ†Í‰£popÂÂÂP³ExpressionStatementÍ¤Í±Q®CallExpressionÍ¤Í°V°MemberExpressionÍ¤Í®IªIdentifierÍ¤Íª¦ColumnIªIdentifierÍ«Í®£popÂÂÂP³ExpressionStatementÍ»Í‹Q®CallExpressionÍ»ÍŠV°MemberExpressionÍ»ÍÙR®ThisExpressionÍ»Í¿IªIdentifierÍÀÍÙ¹observeComponentCreation2ÂÂ’L·ArrowFunctionExpressionÍÚÍ‚ÀÂÂÂ’IªIdentifierÍÛÍá¦elmtIdIªIdentifierÍãÍò¯isInitialRenderJ®BlockStatementÍ÷Í‚’P³ExpressionStatementÍÍQ®CallExpressionÍÍV°MemberExpressionÍÍIªIdentifierÍÍ¥BlankIªIdentifierÍÍ¦createÂÂÂP³ExpressionStatementÍ#ÍwQ®CallExpressionÍ#ÍvV°MemberExpressionÍ#Í2IªIdentifierÍ#Í(¥BlankIªIdentifierÍ)Í2©debugLineÂÂ’O§LiteralÍ3ÍnÙ9features/map/src/main/ets/view/KnowledgeContent.ets(74:7)Ù;"features/map/src/main/ets/view/KnowledgeContent.ets(74:7)"O§LiteralÍpÍu£map¥"map"ÂIªIdentifierÍ„Í‰¥BlankÂP³ExpressionStatementÍ•Í¡Q®CallExpressionÍ•Í V°MemberExpressionÍ•ÍIªIdentifierÍ•Íš¥BlankIªIdentifierÍ›Í£popÂÂÂP³ExpressionStatementÍ«Í]Q®CallExpressionÍ«Í\V°MemberExpressionÍ«ÍÉR®ThisExpressionÍ«Í¯IªIdentifierÍ°ÍÉ¹observeComponentCreation2ÂÂ’L·ArrowFunctionExpressionÍÊÍTÀÂÂÂ’IªIdentifierÍËÍÑ¦elmtIdIªIdentifierÍÓÍâ¯isInitialRenderJ®BlockStatementÍçÍT”P³ExpressionStatementÍ
+Í‚Q®CallExpressionÍ
+ÍV°MemberExpressionÍ
+ÍIªIdentifierÍ
+Í¥ImageIªIdentifierÍÍ¦createÂÂ‘Y°ObjectExpressionÍÍ€•Z¨PropertyÍÍ'ÂÂÂO§LiteralÍÍ¢id¤"id"O§LiteralÍÍ'Î  ¨50331652¤initZ¨PropertyÍ)Í6ÂÂÂO§LiteralÍ)Í/¤type¦"type"O§LiteralÍ1Í6ÍN ¥20000¤initZ¨PropertyÍ8ÍBÂÂÂIªIdentifierÍ8Í>¦params[¯ArrayExpressionÍ@ÍB¤initZ¨PropertyÍDÍiÂÂÂO§LiteralÍDÍPªbundleName¬"bundleName"O§LiteralÍRÍiµcom.huawei.quickstart·"com.huawei.quickstart"¤initZ¨PropertyÍkÍ~ÂÂÂO§LiteralÍkÍwªmoduleName¬"moduleName"O§LiteralÍyÍ~£map¥"map"¤initÂP³ExpressionStatementÍÍäQ®CallExpressionÍÍãV°MemberExpressionÍÍŸIªIdentifierÍÍ•¥ImageIªIdentifierÍ–ÍŸ©debugLineÂÂ’O§LiteralÍ ÍÛÙ9features/map/src/main/ets/view/KnowledgeContent.ets(76:7)Ù;"features/map/src/main/ets/view/KnowledgeContent.ets(76:7)"O§LiteralÍİÍâ£map¥"map"ÂP³ExpressionStatementÍÍQ®CallExpressionÍÍV°MemberExpressionÍÍIªIdentifierÍÍ¥ImageIªIdentifierÍÍ¥widthÂÂ‘O§LiteralÍÍ¢12ÂP³ExpressionStatementÍ8ÍIQ®CallExpressionÍ8ÍHV°MemberExpressionÍ8ÍDIªIdentifierÍ8Í=¥ImageIªIdentifierÍ>ÍD¦heightÂÂ‘O§LiteralÍEÍG¢24ÂIªIdentifierÍVÍ[¥ImageÂP³ExpressionStatementÍgÍqQ®CallExpressionÍgÍpV°MemberExpressionÍgÍnIªIdentifierÍgÍj£RowIªIdentifierÍkÍn£popÂÂÂK°MethodDefinitionÍ‰Í{ÂÂIªIdentifierÍ‰Í—®KnowledgeBlock¦methodL²FunctionExpressionÍ—Í{ÀÂÂÂ’IªIdentifierÍ˜Í ¨materialM±AssignmentPatternÍ¢Í¯IªIdentifierÍ¢Í¨¦parentO§LiteralÍ«Í¯À¤nullJ®BlockStatementÍ±Í{˜P³ExpressionStatementÍ¼ÍQ®CallExpressionÍ¼ÍV°MemberExpressionÍ¼ÍÚR®ThisExpressionÍ¼ÍÀIªIdentifierÍÁÍÚ¹observeComponentCreation2ÂÂ’L·ArrowFunctionExpressionÍÛÍÀÂÂÂ’IªIdentifierÍÜÍâ¦elmtIdIªIdentifierÍäÍó¯isInitialRenderJ®BlockStatementÍøÍ•P³ExpressionStatementÍÍQ®CallExpressionÍÍV°MemberExpressionÍÍIªIdentifierÍÍ¦ColumnIªIdentifierÍÍ¦createÂÂÂP³ExpressionStatementÍ%ÍzQ®CallExpressionÍ%ÍyV°MemberExpressionÍ%Í5IªIdentifierÍ%Í+¦ColumnIªIdentifierÍ,Í5©debugLineÂÂ’O§LiteralÍ6ÍqÙ9features/map/src/main/ets/view/KnowledgeContent.ets(87:5)Ù;"features/map/src/main/ets/view/KnowledgeContent.ets(87:5)"O§LiteralÍsÍx£map¥"map"ÂP³ExpressionStatementÍˆÍQ®CallExpressionÍˆÍœV°MemberExpressionÍˆÍ”IªIdentifierÍˆÍ¦ColumnIªIdentifierÍÍ”¥widthÂÂ‘O§LiteralÍ•Í›¤100%¦'100%'ÂP³ExpressionStatementÍ«ÍÆQ®CallExpressionÍ«ÍÅV°MemberExpressionÍ«Í¸IªIdentifierÍ«Í±¦ColumnIªIdentifierÍ²Í¸¦marginÂÂ‘Y°ObjectExpressionÍ¹ÍÄ‘Z¨PropertyÍ»ÍÂÂÂÂIªIdentifierÍ»Í¾£topO§LiteralÍÀÍÂ¢28¤initÂP³ExpressionStatementÍÔÍıQ®CallExpressionÍÔÍüV°MemberExpressionÍÔÍåIªIdentifierÍÔÍÚ¦ColumnIªIdentifierÍÛÍåªalignItemsÂÂ‘V°MemberExpressionÍæÍûIªIdentifierÍæÍõ¯HorizontalAlignIªIdentifierÍöÍû¥StartÂÂÂIªIdentifierÍ
+Í¦ColumnÂP³ExpressionStatementÍÍúQ®CallExpressionÍÍùV°MemberExpressionÍÍ:R®ThisExpressionÍÍ IªIdentifierÍ!Í:¹observeComponentCreation2ÂÂ’L·ArrowFunctionExpressionÍ;ÍòÀÂÂÂ’IªIdentifierÍ<ÍB¦elmtIdIªIdentifierÍDÍS¯isInitialRenderJ®BlockStatementÍXÍò–P³ExpressionStatementÍzÍ™Q®CallExpressionÍzÍ˜V°MemberExpressionÍzÍ…IªIdentifierÍzÍ~¤TextIªIdentifierÍÍ…¦createÂÂ‘V°MemberExpressionÍ†Í—IªIdentifierÍ†Í¨materialIªIdentifierÍÍ—¨subtitleÂÂÂP³ExpressionStatementÍ§ÍúQ®CallExpressionÍ§ÍùV°MemberExpressionÍ§ÍµIªIdentifierÍ§Í«¤TextIªIdentifierÍ¬Íµ©debugLineÂÂ’O§LiteralÍ¶ÍñÙ9features/map/src/main/ets/view/KnowledgeContent.ets(89:7)Ù;"features/map/src/main/ets/view/KnowledgeContent.ets(89:7)"O§LiteralÍóÍø£map¥"map"ÂP³ExpressionStatementÍÍBQ®CallExpressionÍÍAV°MemberExpressionÍÍ*IªIdentifierÍÍ¤TextIªIdentifierÍ Í*ªfontFamilyÂÂ‘O§LiteralÍ+Í@³HarmonyHeiTi-Mediumµ'HarmonyHeiTi-Medium'ÂP³ExpressionStatementÍcÍuQ®CallExpressionÍcÍtV°MemberExpressionÍcÍpIªIdentifierÍcÍg¤TextIªIdentifierÍhÍp¨fontSizeÂÂ‘O§LiteralÍqÍs¢14ÂP³ExpressionStatementÍ–Í«Q®CallExpressionÍ–ÍªV°MemberExpressionÍ–Í¥IªIdentifierÍ–Íš¤TextIªIdentifierÍ›Í¥ªfontWeightÂÂ‘O§LiteralÍ¦Í©Íô£500ÂP³ExpressionStatementÍÌÍçQ®CallExpressionÍÌÍæV°MemberExpressionÍÌÍ×IªIdentifierÍÌÍĞ¤TextIªIdentifierÍÑÍ×¦marginÂÂ‘Y°ObjectExpressionÍØÍå‘Z¨PropertyÍÚÍãÂÂÂIªIdentifierÍÚÍà¦bottomO§LiteralÍâÍã¡8¤initÂIªIdentifierÍôÍø¤TextÂP³ExpressionStatementÍÍQ®CallExpressionÍÍV°MemberExpressionÍÍIªIdentifierÍÍ¤TextIªIdentifierÍÍ£popÂÂÂP³ExpressionStatementÍ(Í=Q®CallExpressionÍ(Í<V°MemberExpressionÍ(ÍFR®ThisExpressionÍ(Í,IªIdentifierÍ-ÍF¹observeComponentCreation2ÂÂ’L·ArrowFunctionExpressionÍGÍ5ÀÂÂÂ’IªIdentifierÍHÍN¦elmtIdIªIdentifierÍPÍ_¯isInitialRenderJ®BlockStatementÍdÍ5–P³ExpressionStatementÍsÍQ®CallExpressionÍsÍV°MemberExpressionÍsÍ~IªIdentifierÍsÍw¤ListIªIdentifierÍxÍ~¦createÂÂ‘Y°ObjectExpressionÍÍŒ‘Z¨PropertyÍÍŠÂÂÂIªIdentifierÍÍ†¥spaceO§LiteralÍˆÍŠ¢12¤initÂP³ExpressionStatementÍœÍïQ®CallExpressionÍœÍîV°MemberExpressionÍœÍªIªIdentifierÍœÍ ¤ListIªIdentifierÍ¡Íª©debugLineÂÂ’O§LiteralÍ«ÍæÙ9features/map/src/main/ets/view/KnowledgeContent.ets(94:7)Ù;"features/map/src/main/ets/view/KnowledgeContent.ets(94:7)"O§LiteralÍèÍí£map¥"map"ÂP³ExpressionStatementÍıÍQ®CallExpressionÍıÍV°MemberExpressionÍıÍIªIdentifierÍıÍ¤ListIªIdentifierÍÍ¯backgroundColorÂÂ‘V°MemberExpressionÍÍIªIdentifierÍÍ¥ColorIªIdentifierÍÍ¥WhiteÂÂÂP³ExpressionStatementÍ-ÍCQ®CallExpressionÍ-ÍBV°MemberExpressionÍ-Í>IªIdentifierÍ-Í1¤ListIªIdentifierÍ2Í>¬borderRadiusÂÂ‘O§LiteralÍ?ÍA¢16ÂP³ExpressionStatementÍQÍwQ®CallExpressionÍQÍvV°MemberExpressionÍQÍ]IªIdentifierÍQÍU¤ListIªIdentifierÍVÍ]§paddingÂÂ‘Y°ObjectExpressionÍ^Íu’Z¨PropertyÍ`ÍhÂÂÂIªIdentifierÍ`Íd¤leftO§LiteralÍfÍh¢12¤initZ¨PropertyÍjÍsÂÂÂIªIdentifierÍjÍo¥rightO§LiteralÍqÍs¢12¤initÂP³ExpressionStatementÍ…Í*Q®CallExpressionÍ…Í)V°MemberExpressionÍ…Í‘IªIdentifierÍ…Í‰¤ListIªIdentifierÍŠÍ‘§dividerÂÂ‘Y°ObjectExpressionÍ’Í(”Z¨PropertyÍ¥ÍµÂÂÂIªIdentifierÍ¥Í°«strokeWidthO§LiteralÍ²ÍµË?à      £0.5¤initZ¨PropertyÍÈÍ×ÂÂÂIªIdentifierÍÈÍÓ«startMarginO§LiteralÍÕÍ×&¢38¤initZ¨PropertyÍêÍöÂÂÂIªIdentifierÍêÍó©endMarginO§LiteralÍõÍö ¡0¤initZ¨PropertyÍ	ÍÂÂÂIªIdentifierÍ	Í¥colorO§LiteralÍÍ§#F2F2F2©'#F2F2F2'¤initÂIªIdentifierÍ7Í;¤ListÂP³ExpressionStatementÍGÍ0Q®CallExpressionÍGÍ/V°MemberExpressionÍGÍeR®ThisExpressionÍGÍKIªIdentifierÍLÍe¹observeComponentCreation2ÂÂ’L·ArrowFunctionExpressionÍfÍ%ÀÂÂÂ’IªIdentifierÍgÍm¦elmtIdIªIdentifierÍoÍ~¯isInitialRenderJ®BlockStatementÍƒÍ%“P³ExpressionStatementÍ’Í£Q®CallExpressionÍ’Í¢V°MemberExpressionÍ’Í IªIdentifierÍ’Í™§ForEachIªIdentifierÍšÍ ¦createÂÂÂÔr\•¤type¥start£end¬declarations¤kind³VariableDeclarationÍ±Í‘Ôr]•¤type¥start£end¢id¤init²VariableDeclaratorÍ·ÍIªIdentifierÍ·ÍÍ¶forEachItemGenFunctionL·ArrowFunctionExpressionÍĞÍÀÂÂÂ’IªIdentifierÍÑÍÖ¥_itemIªIdentifierÍØÍİ¥indexJ®BlockStatementÍâÍ’\³VariableDeclarationÍõÍ‘]²VariableDeclaratorÍûÍIªIdentifierÍûÍÿ¤itemIªIdentifierÍÍ¥_item¥constJ®BlockStatementÍÍ€•\³VariableDeclarationÍ1ÍÏ‘]²VariableDeclaratorÍ7ÍÎIªIdentifierÍ7ÍC¬itemCreationL·ArrowFunctionExpressionÍFÍÎÀÂÂÂ’IªIdentifierÍGÍM¦elmtIdIªIdentifierÍOÍ^¯isInitialRenderJ®BlockStatementÍcÍÎ”P³ExpressionStatementÍ~Í´Q®CallExpressionÍ~Í³V°MemberExpressionÍ~Í«IªIdentifierÍ~Í²ViewStackProcessorIªIdentifierÍ‘Í«ºStartGetAccessRecordingForÂÂ‘IªIdentifierÍ¬Í²¦elmtIdÂP³ExpressionStatementÍÎÍøQ®CallExpressionÍÎÍ÷V°MemberExpressionÍÎÍİIªIdentifierÍÎÍÖ¨ListItemIªIdentifierÍ×Íİ¦createÂÂ’IªIdentifierÍŞÍğ²deepRenderFunctionO§LiteralÍòÍöÃ¤trueÂS«IfStatementÍÍqN¯UnaryExpressionÍÍ&¡!ÃIªIdentifierÍÍ&¯isInitialRenderJ®BlockStatementÍ(Íq‘P³ExpressionStatementÍGÍVQ®CallExpressionÍGÍUV°MemberExpressionÍGÍSIªIdentifierÍGÍO¨ListItemIªIdentifierÍPÍS£popÂÂÂÀP³ExpressionStatementÍ‹Í·Q®CallExpressionÍ‹Í¶V°MemberExpressionÍ‹Í´IªIdentifierÍ‹Í²ViewStackProcessorIªIdentifierÍÍ´¶StopGetAccessRecordingÂÂÂ¥const\³VariableDeclarationÍåÍç‘]²VariableDeclaratorÍëÍæIªIdentifierÍëÍø­itemCreation2L·ArrowFunctionExpressionÍûÍæÀÂÂÂ’IªIdentifierÍüÍ¦elmtIdIªIdentifierÍÍ¯isInitialRenderJ®BlockStatementÍÍæ’P³ExpressionStatementÍ3Í]Q®CallExpressionÍ3Í\V°MemberExpressionÍ3ÍBIªIdentifierÍ3Í;¨ListItemIªIdentifierÍ<ÍB¦createÂÂ’IªIdentifierÍCÍU²deepRenderFunctionO§LiteralÍWÍ[Ã¤trueÂP³ExpressionStatementÍwÍÏQ®CallExpressionÍwÍÎV°MemberExpressionÍwÍ‰IªIdentifierÍwÍ¨ListItemIªIdentifierÍ€Í‰©debugLineÂÂ’O§LiteralÍŠÍÆÙ:features/map/src/main/ets/view/KnowledgeContent.ets(96:11)Ù<"features/map/src/main/ets/view/KnowledgeContent.ets(96:11)"O§LiteralÍÈÍÍ£map¥"map"Â¥const\³VariableDeclarationÍıÍú‘]²VariableDeclaratorÍÍùIªIdentifierÍÍ²deepRenderFunctionL·ArrowFunctionExpressionÍÍùÀÂÂÂ’IªIdentifierÍÍ¦elmtIdIªIdentifierÍ!Í0¯isInitialRenderJ®BlockStatementÍ5Íù“P³ExpressionStatementÍPÍvQ®CallExpressionÍPÍuIªIdentifierÍPÍ\¬itemCreation’IªIdentifierÍ]Íc¦elmtIdIªIdentifierÍeÍt¯isInitialRenderÂP³ExpressionStatementÍÍ¹Q®CallExpressionÍÍ¸Q®CallExpressionÍÍ²V°MemberExpressionÍÍ¬V°MemberExpressionÍÍ§R®ThisExpressionÍÍ”IªIdentifierÍ•Í§²KnowledgeBlockLineÂÂIªIdentifierÍ¨Í¬¤bindÂÂ‘R®ThisExpressionÍ­Í±Â‘IªIdentifierÍ³Í·¤itemÂP³ExpressionStatementÍÓÍâQ®CallExpressionÍÓÍáV°MemberExpressionÍÓÍßIªIdentifierÍÓÍÛ¨ListItemIªIdentifierÍÜÍß£popÂÂÂ¥constP³ExpressionStatementÍÍHQ®CallExpressionÍÍGV°MemberExpressionÍÍ.R®ThisExpressionÍÍIªIdentifierÍÍ.¹observeComponentCreation2ÂÂ’IªIdentifierÍ/Í<­itemCreation2IªIdentifierÍ>ÍF¨ListItemÂP³ExpressionStatementÍ^ÍmQ®CallExpressionÍ^ÍlV°MemberExpressionÍ^ÍjIªIdentifierÍ^Íf¨ListItemIªIdentifierÍgÍj£popÂÂÂ¥constP³ExpressionStatementÍÍQ®CallExpressionÍÍV°MemberExpressionÍÍ¸R®ThisExpressionÍÍ¢IªIdentifierÍ£Í¸µforEachUpdateFunctionÂÂ–IªIdentifierÍ¹Í¿¦elmtIdV°MemberExpressionÍÁÍ×IªIdentifierÍÁÍÉ¨materialIªIdentifierÍÊÍ×­knowledgeBaseÂÂIªIdentifierÍÙÍï¶forEachItemGenFunctionL·ArrowFunctionExpressionÍñÍÀÃÂÂ’IªIdentifierÍòÍö¤itemIªIdentifierÍøÍı¥indexV°MemberExpressionÍÍIªIdentifierÍÍ¤itemIªIdentifierÍÍ¥titleÂÂO§LiteralÍÍÃ¤trueO§LiteralÍÍÃ¤trueÂIªIdentifierÍ'Í.§ForEachÂP³ExpressionStatementÍ:ÍHQ®CallExpressionÍ:ÍGV°MemberExpressionÍ:ÍEIªIdentifierÍ:ÍA§ForEachIªIdentifierÍBÍE£popÂÂÂP³ExpressionStatementÍRÍ]Q®CallExpressionÍRÍ\V°MemberExpressionÍRÍZIªIdentifierÍRÍV¤ListIªIdentifierÍWÍZ£popÂÂÂP³ExpressionStatementÍgÍtQ®CallExpressionÍgÍsV°MemberExpressionÍgÍqIªIdentifierÍgÍm¦ColumnIªIdentifierÍnÍq£popÂÂÂK°MethodDefinitionÍÍ&TÂÂIªIdentifierÍÍ­initialRender¦methodL²FunctionExpressionÍÍ&TÀÂÂÂJ®BlockStatementÍ‘Í&TšP³ExpressionStatementÍœÍ¥Q®CallExpressionÍœÍ¤V°MemberExpressionÍœÍºR®ThisExpressionÍœÍ IªIdentifierÍ¡Íº¹observeComponentCreation2ÂÂ’L·ArrowFunctionExpressionÍ»Í›ÀÂÂÂ’IªIdentifierÍ¼ÍÂ¦elmtIdIªIdentifierÍÄÍÓ¯isInitialRenderJ®BlockStatementÍØÍ›˜P³ExpressionStatementÍçÍ÷Q®CallExpressionÍçÍöV°MemberExpressionÍçÍôIªIdentifierÍçÍí¦ScrollIªIdentifierÍîÍô¦createÂÂÂP³ExpressionStatementÍÍ[Q®CallExpressionÍÍZV°MemberExpressionÍÍIªIdentifierÍÍ¦ScrollIªIdentifierÍÍ©debugLineÂÂ’O§LiteralÍÍRÙ:features/map/src/main/ets/view/KnowledgeContent.ets(116:5)Ù<"features/map/src/main/ets/view/KnowledgeContent.ets(116:5)"O§LiteralÍTÍY£map¥"map"ÂP³ExpressionStatementÍiÍŠQ®CallExpressionÍiÍ‰V°MemberExpressionÍiÍuIªIdentifierÍiÍo¦ScrollIªIdentifierÍpÍu¥alignÂÂ‘V°MemberExpressionÍvÍˆIªIdentifierÍvÍ©AlignmentIªIdentifierÍ€Íˆ¨TopStartÂÂÂP³ExpressionStatementÍ˜ÍÅQ®CallExpressionÍ˜ÍÄV°MemberExpressionÍ˜Í­IªIdentifierÍ˜Í¦ScrollIªIdentifierÍŸÍ­®constraintSizeÂÂ‘Y°ObjectExpressionÍ®ÍÃ‘Z¨PropertyÍ°ÍÁÂÂÂIªIdentifierÍ°Í¹©minHeightO§LiteralÍ»ÍÁ¤100%¦'100%'¤initÂP³ExpressionStatementÍÓÍøQ®CallExpressionÍÓÍ÷V°MemberExpressionÍÓÍäIªIdentifierÍÓÍÙ¦ScrollIªIdentifierÍÚÍäªedgeEffectÂÂ‘V°MemberExpressionÍåÍöIªIdentifierÍåÍïªEdgeEffectIªIdentifierÍğÍö¦SpringÂÂÂP³ExpressionStatementÍÍ2Q®CallExpressionÍÍ1V°MemberExpressionÍÍIªIdentifierÍÍ¦ScrollIªIdentifierÍÍªscrollableÂÂ‘V°MemberExpressionÍÍ0IªIdentifierÍÍ'¯ScrollDirectionIªIdentifierÍ(Í0¨VerticalÂÂÂP³ExpressionStatementÍ@Í`Q®CallExpressionÍ@Í_V°MemberExpressionÍ@ÍPIªIdentifierÍ@ÍF¦ScrollIªIdentifierÍGÍP©scrollBarÂÂ‘V°MemberExpressionÍQÍ^IªIdentifierÍQÍY¨BarStateIªIdentifierÍZÍ^¤AutoÂÂÂP³ExpressionStatementÍnÍQ®CallExpressionÍnÍV°MemberExpressionÍnÍ„IªIdentifierÍnÍt¦ScrollIªIdentifierÍuÍ„¯backgroundColorÂÂ‘O§LiteralÍ…Í§#F1F3F5©'#F1F3F5'ÂIªIdentifierÍÍ£¦ScrollÂP³ExpressionStatementÍ¯Í †Q®CallExpressionÍ¯Í …V°MemberExpressionÍ¯ÍÍR®ThisExpressionÍ¯Í³IªIdentifierÍ´ÍÍ¹observeComponentCreation2ÂÂ’L·ArrowFunctionExpressionÍÎÍ |ÀÂÂÂ’IªIdentifierÍÏÍÕ¦elmtIdIªIdentifierÍ×Íæ¯isInitialRenderJ®BlockStatementÍëÍ |•P³ExpressionStatementÍúÍ
+Q®CallExpressionÍúÍ	V°MemberExpressionÍúÍIªIdentifierÍúÍ ¦ColumnIªIdentifierÍÍ¦createÂÂÂP³ExpressionStatementÍÍnQ®CallExpressionÍÍmV°MemberExpressionÍÍ(IªIdentifierÍÍ¦ColumnIªIdentifierÍÍ(©debugLineÂÂ’O§LiteralÍ)ÍeÙ:features/map/src/main/ets/view/KnowledgeContent.ets(117:7)Ù<"features/map/src/main/ets/view/KnowledgeContent.ets(117:7)"O§LiteralÍgÍl£map¥"map"ÂP³ExpressionStatementÍ|Í¥Q®CallExpressionÍ|Í¤V°MemberExpressionÍ|ÍIªIdentifierÍ|Í‚¦ColumnIªIdentifierÍƒÍªalignItemsÂÂ‘V°MemberExpressionÍÍ£IªIdentifierÍÍ¯HorizontalAlignIªIdentifierÍÍ£¥StartÂÂÂP³ExpressionStatementÍ³Í AQ®CallExpressionÍ³Í @V°MemberExpressionÍ³ÍÁIªIdentifierÍ³Í¹¦ColumnIªIdentifierÍºÍÁ§paddingÂÂ‘Y°ObjectExpressionÍÂÍ ?”Z¨PropertyÍÕÍÜÂÂÂIªIdentifierÍÕÍØ£topO§LiteralÍÚÍÜ¢12¤initZ¨PropertyÍïÍ÷ÂÂÂIªIdentifierÍïÍó¤leftO§LiteralÍõÍ÷¢16¤initZ¨PropertyÍ 
+Í ÂÂÂIªIdentifierÍ 
+Í ¦bottomO§LiteralÍ Í ¢12¤initZ¨PropertyÍ 'Í 0ÂÂÂIªIdentifierÍ 'Í ,¥rightO§LiteralÍ .Í 0¢16¤initÂP³ExpressionStatementÍ OÍ qQ®CallExpressionÍ OÍ pV°MemberExpressionÍ OÍ eIªIdentifierÍ OÍ U¦ColumnIªIdentifierÍ VÍ e¯backgroundColorÂÂ‘O§LiteralÍ fÍ o§#F1F3F5©'#F1F3F5'ÂIªIdentifierÍ ~Í „¦ColumnÂP³ExpressionStatementÍ Í"Q®CallExpressionÍ Í"V°MemberExpressionÍ Í ®R®ThisExpressionÍ Í ”IªIdentifierÍ •Í ®¹observeComponentCreation2ÂÂ’L·ArrowFunctionExpressionÍ ¯Í"	ÀÂÂÂ’IªIdentifierÍ °Í ¶¦elmtIdIªIdentifierÍ ¸Í Ç¯isInitialRenderJ®BlockStatementÍ ÌÍ"	–P³ExpressionStatementÍ ÛÍ üQ®CallExpressionÍ ÛÍ ûV°MemberExpressionÍ ÛÍ æIªIdentifierÍ ÛÍ ß¤TextIªIdentifierÍ àÍ æ¦createÂÂ‘P¯ChainExpressionÍ çÍ úV°MemberExpressionÍ çÍ úV°MemberExpressionÍ çÍ óR®ThisExpressionÍ çÍ ëIªIdentifierÍ ìÍ ó§sectionÂÂIªIdentifierÍ õÍ ú¥titleÂÃÂP³ExpressionStatementÍ!
+Í!^Q®CallExpressionÍ!
+Í!]V°MemberExpressionÍ!
+Í!IªIdentifierÍ!
+Í!¤TextIªIdentifierÍ!Í!©debugLineÂÂ’O§LiteralÍ!Í!UÙ:features/map/src/main/ets/view/KnowledgeContent.ets(118:9)Ù<"features/map/src/main/ets/view/KnowledgeContent.ets(118:9)"O§LiteralÍ!WÍ!\£map¥"map"ÂP³ExpressionStatementÍ!lÍ!‘Q®CallExpressionÍ!lÍ!V°MemberExpressionÍ!lÍ!{IªIdentifierÍ!lÍ!p¤TextIªIdentifierÍ!qÍ!{ªfontFamilyÂÂ‘O§LiteralÍ!|Í!±HarmonyHeiTi-Bold³'HarmonyHeiTi-Bold'ÂP³ExpressionStatementÍ!ŸÍ!±Q®CallExpressionÍ!ŸÍ!°V°MemberExpressionÍ!ŸÍ!¬IªIdentifierÍ!ŸÍ!£¤TextIªIdentifierÍ!¤Í!¬¨fontSizeÂÂ‘O§LiteralÍ!­Í!¯¢20ÂP³ExpressionStatementÍ!¿Í!ÔQ®CallExpressionÍ!¿Í!ÓV°MemberExpressionÍ!¿Í!ÎIªIdentifierÍ!¿Í!Ã¤TextIªIdentifierÍ!ÄÍ!ÎªfontWeightÂÂ‘O§LiteralÍ!ÏÍ!ÒÍ¼£700ÂP³ExpressionStatementÍ!âÍ!şQ®CallExpressionÍ!âÍ!ıV°MemberExpressionÍ!âÍ!ğIªIdentifierÍ!âÍ!æ¤TextIªIdentifierÍ!çÍ!ğ©fontColorÂÂ‘V°MemberExpressionÍ!ñÍ!üIªIdentifierÍ!ñÍ!ö¥ColorIªIdentifierÍ!÷Í!ü¥BlackÂÂÂIªIdentifierÍ"Í"¤TextÂP³ExpressionStatementÍ"Í"&Q®CallExpressionÍ"Í"%V°MemberExpressionÍ"Í"#IªIdentifierÍ"Í"¤TextIªIdentifierÍ" Í"#£popÂÂÂP³ExpressionStatementÍ"0Í$
+Q®CallExpressionÍ"0Í$	V°MemberExpressionÍ"0Í"NR®ThisExpressionÍ"0Í"4IªIdentifierÍ"5Í"N¹observeComponentCreation2ÂÂ’L·ArrowFunctionExpressionÍ"OÍ$ÀÂÂÂ’IªIdentifierÍ"PÍ"V¦elmtIdIªIdentifierÍ"XÍ"g¯isInitialRenderJ®BlockStatementÍ"lÍ$˜P³ExpressionStatementÍ"{Í"œQ®CallExpressionÍ"{Í"›V°MemberExpressionÍ"{Í"†IªIdentifierÍ"{Í"¤TextIªIdentifierÍ"€Í"†¦createÂÂ‘P¯ChainExpressionÍ"‡Í"šV°MemberExpressionÍ"‡Í"šV°MemberExpressionÍ"‡Í"“R®ThisExpressionÍ"‡Í"‹IªIdentifierÍ"ŒÍ"“§sectionÂÂIªIdentifierÍ"•Í"š¥briefÂÃÂP³ExpressionStatementÍ"ªÍ"şQ®CallExpressionÍ"ªÍ"ıV°MemberExpressionÍ"ªÍ"¸IªIdentifierÍ"ªÍ"®¤TextIªIdentifierÍ"¯Í"¸©debugLineÂÂ’O§LiteralÍ"¹Í"õÙ:features/map/src/main/ets/view/KnowledgeContent.ets(123:9)Ù<"features/map/src/main/ets/view/KnowledgeContent.ets(123:9)"O§LiteralÍ"÷Í"ü£map¥"map"ÂP³ExpressionStatementÍ#Í#,Q®CallExpressionÍ#Í#+V°MemberExpressionÍ#Í#IªIdentifierÍ#Í#¤TextIªIdentifierÍ#Í#ªfontFamilyÂÂ‘O§LiteralÍ#Í#*¬HarmonyHeiTi®'HarmonyHeiTi'ÂP³ExpressionStatementÍ#:Í#LQ®CallExpressionÍ#:Í#KV°MemberExpressionÍ#:Í#GIªIdentifierÍ#:Í#>¤TextIªIdentifierÍ#?Í#G¨fontSizeÂÂ‘O§LiteralÍ#HÍ#J¢12ÂP³ExpressionStatementÍ#ZÍ#}Q®CallExpressionÍ#ZÍ#|V°MemberExpressionÍ#ZÍ#hIªIdentifierÍ#ZÍ#^¤TextIªIdentifierÍ#_Í#h©fontColorÂÂ‘O§LiteralÍ#iÍ#{°rgba(0,0,0,0,60)²'rgba(0,0,0,0,60)'ÂP³ExpressionStatementÍ#‹Í#­Q®CallExpressionÍ#‹Í#¬V°MemberExpressionÍ#‹Í#™IªIdentifierÍ#‹Í#¤TextIªIdentifierÍ#Í#™©textAlignÂÂ‘V°MemberExpressionÍ#šÍ#«IªIdentifierÍ#šÍ#£©TextAlignIªIdentifierÍ#¤Í#«§JUSTIFYÂÂÂP³ExpressionStatementÍ#»Í#ĞQ®CallExpressionÍ#»Í#ÏV°MemberExpressionÍ#»Í#ÊIªIdentifierÍ#»Í#¿¤TextIªIdentifierÍ#ÀÍ#ÊªfontWeightÂÂ‘O§LiteralÍ#ËÍ#ÎÍ£400ÂP³ExpressionStatementÍ#ŞÍ#÷Q®CallExpressionÍ#ŞÍ#öV°MemberExpressionÍ#ŞÍ#éIªIdentifierÍ#ŞÍ#â¤TextIªIdentifierÍ#ãÍ#é¦marginÂÂ‘Y°ObjectExpressionÍ#êÍ#õ‘Z¨PropertyÍ#ìÍ#óÂÂÂIªIdentifierÍ#ìÍ#ï£topO§LiteralÍ#ñÍ#ó¢12¤initÂIªIdentifierÍ$Í$¤TextÂP³ExpressionStatementÍ$Í$Q®CallExpressionÍ$Í$V°MemberExpressionÍ$Í$IªIdentifierÍ$Í$¤TextIªIdentifierÍ$Í$£popÂÂÂP³ExpressionStatementÍ$)Í%ôQ®CallExpressionÍ$)Í%óV°MemberExpressionÍ$)Í$GR®ThisExpressionÍ$)Í$-IªIdentifierÍ$.Í$G¹observeComponentCreation2ÂÂ’L·ArrowFunctionExpressionÍ$HÍ%éÀÂÂÂ’IªIdentifierÍ$IÍ$O¦elmtIdIªIdentifierÍ$QÍ$`¯isInitialRenderJ®BlockStatementÍ$eÍ%é“P³ExpressionStatementÍ$‹Í$œQ®CallExpressionÍ$‹Í$›V°MemberExpressionÍ$‹Í$™IªIdentifierÍ$‹Í$’§ForEachIªIdentifierÍ$“Í$™¦createÂÂÂ\³VariableDeclarationÍ$ªÍ%G‘]²VariableDeclaratorÍ$°Í%FIªIdentifierÍ$°Í$Æ¶forEachItemGenFunctionL·ArrowFunctionExpressionÍ$ÉÍ%FÀÂÂÂ‘IªIdentifierÍ$ÉÍ$Î¥_itemJ®BlockStatementÍ$ÒÍ%F’\³VariableDeclarationÍ$åÍ$ü‘]²VariableDeclaratorÍ$ëÍ$ûIªIdentifierÍ$ëÍ$ó¨materialIªIdentifierÍ$öÍ$û¥_item¥constP³ExpressionStatementÍ%Í%7Q®CallExpressionÍ%Í%6Q®CallExpressionÍ%Í%,V°MemberExpressionÍ%Í%&V°MemberExpressionÍ%Í%!R®ThisExpressionÍ%Í%IªIdentifierÍ%Í%!®KnowledgeBlockÂÂIªIdentifierÍ%"Í%&¤bindÂÂ‘R®ThisExpressionÍ%'Í%+Â‘IªIdentifierÍ%-Í%5¨materialÂ¥constP³ExpressionStatementÍ%UÍ%ŞQ®CallExpressionÍ%UÍ%İV°MemberExpressionÍ%UÍ%oR®ThisExpressionÍ%UÍ%YIªIdentifierÍ%ZÍ%oµforEachUpdateFunctionÂÂ–IªIdentifierÍ%pÍ%v¦elmtIdP¯ChainExpressionÍ%xÍ%V°MemberExpressionÍ%xÍ%V°MemberExpressionÍ%xÍ%„R®ThisExpressionÍ%xÍ%|IªIdentifierÍ%}Í%„§sectionÂÂIªIdentifierÍ%†Í%©materialsÂÃIªIdentifierÍ%‘Í%§¶forEachItemGenFunctionL·ArrowFunctionExpressionÍ%©Í%ÏÀÃÂÂ’IªIdentifierÍ%ªÍ%²¨materialIªIdentifierÍ%´Í%¹¥indexV°MemberExpressionÍ%¾Í%ÏIªIdentifierÍ%¾Í%Æ¨materialIªIdentifierÍ%ÇÍ%Ï¨subtitleÂÂO§LiteralÍ%ÑÍ%ÖÂ¥falseO§LiteralÍ%ØÍ%ÜÃ¤trueÂIªIdentifierÍ%ëÍ%ò§ForEachÂP³ExpressionStatementÍ&Í&Q®CallExpressionÍ&Í&V°MemberExpressionÍ&Í&IªIdentifierÍ&Í&§ForEachIªIdentifierÍ&Í&£popÂÂÂP³ExpressionStatementÍ&)Í&6Q®CallExpressionÍ&)Í&5V°MemberExpressionÍ&)Í&3IªIdentifierÍ&)Í&/¦ColumnIªIdentifierÍ&0Í&3£popÂÂÂP³ExpressionStatementÍ&@Í&MQ®CallExpressionÍ&@Í&LV°MemberExpressionÍ&@Í&JIªIdentifierÍ&@Í&F¦ScrollIªIdentifierÍ&GÍ&J£popÂÂÂK°MethodDefinitionÍ&ZÍ&’ÂÂIªIdentifierÍ&ZÍ&b¨rerender¦methodL²FunctionExpressionÍ&bÍ&’ÀÂÂÂJ®BlockStatementÍ&eÍ&’‘P³ExpressionStatementÍ&pÍ&‹Q®CallExpressionÍ&pÍ&ŠV°MemberExpressionÍ&pÍ&ˆR®ThisExpressionÍ&pÍ&tIªIdentifierÍ&uÍ&ˆ³updateDirtyElementsÂÂÂÀ
