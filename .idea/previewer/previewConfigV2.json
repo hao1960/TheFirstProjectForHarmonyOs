@@ -65,13 +65,13 @@
    }
   ],
   "runningProfileList": [
-   "Tablet"
+   "Phone"
   ],
   "availableProfileList": [
+   "Tablet",
    "2in1",
-   "Default",
-   "Phone",
-   "Foldable"
+   "Foldable",
+   "Default"
   ]
  },
  "enableFileOperation": false

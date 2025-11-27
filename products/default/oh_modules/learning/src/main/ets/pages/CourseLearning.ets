@@ -1,4 +1,5 @@
 import {webview} from '@kit.ArkWeb';
+@Preview
 @Component
 export struct CourseLearning{
   private webviewController:webview.WebviewController = new webview.WebviewController();

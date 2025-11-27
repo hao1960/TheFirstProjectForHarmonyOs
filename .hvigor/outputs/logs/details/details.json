@@ -36,19 +36,35 @@
     "IS_HVIGORFILE_TYPE_CHECK": false,
     "TASK_TIME": {
       "c21f969b5f03d33d43e04f8f136e7682": {
-        "CreateModuleInfo": 839200,
-        "PreCheckSyscap": 290700,
-        "GeneratePkgContextInfo": 4800400,
-        "ProcessStartupConfig": 896000,
-        "PreviewProcessResource": 3262500,
-        "PreviewCompileResource": 1651434900,
-        "PreviewHookCompileResource": 279500,
-        "CopyPreviewProfile": 4309100,
-        "ReplacePreviewerPage": 361700,
-        "buildPreviewerResource": 160700,
-        "PreviewUpdateAssets": 2318600,
-        "PreviewArkTS": 5827842800,
-        "PreviewBuild": 240000
+        "init": 1035300,
+        "CreateModuleInfo": 1653300,
+        "PreCheckSyscap": 625800,
+        "GeneratePkgContextInfo": 9303900,
+        "ProcessStartupConfig": 1895600,
+        "PreviewProcessResource": 6771800,
+        "PreviewHookCompileResource": 364100,
+        "ReplacePreviewerPage": 717500,
+        "buildPreviewerResource": 250300,
+        "PreviewArkTS": 6244550700,
+        "PreviewBuild": 229600
+      },
+      "1d78dc8ed51214e518b5114fe24490ae": {
+        "init": 248400
+      },
+      "25a9ac406aceb47a0c6cade972bc26fa": {
+        "init": 200900
+      },
+      "1f921ae5a6816fd42a8d546be70f22cd": {
+        "init": 175300
+      },
+      "2b3583e6e17721c54496bd04e57a0c15": {
+        "init": 168400
+      },
+      "4b9fd96ea9bad44c52cdc82569434346": {
+        "init": 159000
+      },
+      "APP": {
+        "init": 279500
       }
     },
     "APIS": [
@@ -59,6 +75,8 @@
       "getAllNodes",
       "getRootNode",
       "getNodeName",
+      "getStartParams",
+      "buildFinished",
       "getNodePath",
       "subNodes",
       "getExtraOption",
@@ -69,11 +87,10 @@
       "getParameter",
       "getProductName",
       "nodesEvaluated",
-      "getCommandEntryTask",
-      "getStartParams"
+      "getCommandEntryTask"
     ],
     "CONFIG_PROPERTIES": {},
-    "TOTAL_TIME": 7797672300,
-    "BUILD_ID": "202511201508289740"
+    "BUILD_ID": "202511280130441630",
+    "TOTAL_TIME": 6695500700
   }
 }
